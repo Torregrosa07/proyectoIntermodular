@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./ides.css"> 
+    <link rel="stylesheet" href="./ides.css">
 </head>
+
 <body>
     <h1>IDES</h1>
     <h2>Las IDES que vamos a instalar y configurar:
@@ -15,65 +17,98 @@
         <ul>Eclipse</ul>
     </h2>
     <h3>Visual Studio Code</h3>
-    <p id="parrafo1">Antes de proceder a al tutorial de la instalación del programa es necesario saber un poco de su historia. En Abril del 2015 Microsoft lanzó Visual Studio Code como un editor de código abierto, es decir, OpenSource. Bajo la licencia MIT. La historia de VSC inició con la idea de Microsoft de ofrecer a la comunidad de aquellos programadores y desarrolladores que no necesitaban toda la complejidad de un entorno de desarrollo, sin embargo, Microsoft ya había desarrollado un IDE como Visual Studio que es un IDE bastante completo principalmente para el desarrollo de aplicaciones, pero Visual Studio es más complejo y pesado, cosa que Microsoft no quería para Visual Studio Code, sino que este fuese una herramienta ligera para proyectos pequeños.</p>
-    
+    <p id="parrafo1">Antes de proceder a al tutorial de la instalación del programa es necesario saber un poco de su
+        historia. En Abril del 2015 Microsoft lanzó Visual Studio Code como un editor de código abierto, es decir,
+        OpenSource. Bajo la licencia MIT. La historia de VSC inició con la idea de Microsoft de ofrecer a la comunidad
+        de aquellos programadores y desarrolladores que no necesitaban toda la complejidad de un entorno de desarrollo,
+        sin embargo, Microsoft ya había desarrollado un IDE como Visual Studio que es un IDE bastante completo
+        principalmente para el desarrollo de aplicaciones, pero Visual Studio es más complejo y pesado, cosa que
+        Microsoft no quería para Visual Studio Code, sino que este fuese una herramienta ligera para proyectos pequeños.
+    </p>
+
     <h4>Como instalar VSCode para Windows: </h4>
-    <p id="parrafo2">1- Principalmente debemos ir a la página oficial de Visual Studio Code https://code.visualstudio.com/ y hacer clic en "Download for Windows". Y se procederá a descargar el archivo de instalación. </p>
-    <p id="parrafo3">2- Una vez descargado el archivo hacemos doble clic en el “VSCodeSetup-x64-x.x.x.exe” para comenzar la instalación. El asistente de instalación te guiará mientras estás en el proceso. Se puede elegir la carpeta donde se instalará, crear accesos directos en el escritorio y agregar Visual Studio Code al PATH para abrirlo desde la línea de comandos.</p>
-    <p id="parrafo4">3- Después de que terminemos la instalación, hacemos clic en "Finish" para completar el proceso.</p>
-    <p id="parrafo5">4- Si no lo hemos abierto al final, iremos al menú de inicio y buscaremos "Visual Studio Code" o hacer clic en el acceso directo del escritorio para abrirlo.</p>
-    <p id="parrafo6">5- En cuanto  a la configuración, podemos cambiar el idioma, instalar extensiones para diferentes lenguajes de programación y personalizar nuestro entorno.</p>
-   
+    <p id="parrafo2">1- Principalmente debemos ir a la página oficial de Visual Studio Code
+        https://code.visualstudio.com/ y hacer clic en "Download for Windows". Y se procederá a descargar el archivo de
+        instalación. </p>
+    <p id="parrafo3">2- Una vez descargado el archivo hacemos doble clic en el “VSCodeSetup-x64-x.x.x.exe” para comenzar
+        la instalación. El asistente de instalación te guiará mientras estás en el proceso. Se puede elegir la carpeta
+        donde se instalará, crear accesos directos en el escritorio y agregar Visual Studio Code al PATH para abrirlo
+        desde la línea de comandos.</p>
+    <p id="parrafo4">3- Después de que terminemos la instalación, hacemos clic en "Finish" para completar el proceso.
+    </p>
+    <p id="parrafo5">4- Si no lo hemos abierto al final, iremos al menú de inicio y buscaremos "Visual Studio Code" o
+        hacer clic en el acceso directo del escritorio para abrirlo.</p>
+    <p id="parrafo6">5- En cuanto a la configuración, podemos cambiar el idioma, instalar extensiones para diferentes
+        lenguajes de programación y personalizar nuestro entorno.</p>
+
     <h4>Como instalar VSCode para Linux</h4>
-    <p>Para instalar VSCode en Linux debemos identificar la distribución que estemos usando ya que el proceso cambia un poco, en este caso para las que son basadas en Debian y Ubuntu y lo haremos utilizando el repositorio de Microsft.</p>
-    <p id="parrafo1">1- Abriremos una terminal y pondremos la clave del repositorio de Microsoft:<mark>https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > /usr/share/keyrings/microsoft-archive-keyring.gpg</mark>  
-    Y agregaremos el repositorio de VIsual Studio Code: 
-    <mark>sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</mark> </p>
+    <p>Para instalar VSCode en Linux debemos identificar la distribución que estemos usando ya que el proceso cambia un
+        poco, en este caso para las que son basadas en Debian y Ubuntu y lo haremos utilizando el repositorio de
+        Microsft.</p>
+    <p id="parrafo1">1- Abriremos una terminal y pondremos la clave del repositorio de
+        Microsoft:<mark>https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor >
+            /usr/share/keyrings/microsoft-archive-keyring.gpg</mark>
+        Y agregaremos el repositorio de VIsual Studio Code:
+        <mark>sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-archive-keyring.gpg]
+            https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</mark>
+    </p>
     <p id="parrafo2">2- Actualizaremos la lista de paquetes: <mark> sudo apt update</mark></p>
     <p id="parrafo3">3- Y finalmente instalaremos Visual Studio Code <mark>sudo apt install code</mark> </p>
     <h2>Instalación en Fedora</h2>
-    <p>Iremos a la página oficial de Visual Studio Code: <a href="https://code.visualstudio.com/Download">https://code.visualstudio.com/Download</a> y seleccionaremos la versión para Linux, eligiendo el archivo .rpm para Fedora y otras distribuciones basadas en Red Hat.</p>
-    <p>Una vez descargado el archivo .rpm, abrimos una terminal y navegamos a la carpeta donde se descargó. Usaremos el siguiente comando para instalar el archivo .rpm:</p>
+    <p>Iremos a la página oficial de Visual Studio Code: <a
+            href="https://code.visualstudio.com/Download">https://code.visualstudio.com/Download</a> y seleccionaremos
+        la versión para Linux, eligiendo el archivo .rpm para Fedora y otras distribuciones basadas en Red Hat.</p>
+    <p>Una vez descargado el archivo .rpm, abrimos una terminal y navegamos a la carpeta donde se descargó. Usaremos el
+        siguiente comando para instalar el archivo .rpm:</p>
     <pre>sudo dnf install code-*.rpm</pre>
     <p>Con esto, la instalación de Visual Studio Code estará completa en Fedora.</p>
 
     <h2>Instalación en Arch Linux (Manjaro)</h2>
-    <p>Si estás utilizando Arch Linux o una distribución basada en Arch como Manjaro, se puede instalar Visual Studio Code fácilmente desde el repositorio AUR (Arch User Repository).</p>
+    <p>Si estás utilizando Arch Linux o una distribución basada en Arch como Manjaro, se puede instalar Visual Studio
+        Code fácilmente desde el repositorio AUR (Arch User Repository).</p>
     <p>Instalar desde AUR usando un ayudante de AUR:</p>
     <pre>yay -S visual-studio-code-bin</pre>
     <p>De esta manera se descargará e instalará la versión más reciente de Visual Studio Code.</p>
 
     <h2>Instalación mediante Snap (para cualquier distribución de Linux)</h2>
-    <p>Snap es un sistema de paquetes universal para Linux que facilita la instalación de aplicaciones en cualquier distribución. Si prefieres usar Snap, puedes instalar VS Code con un solo comando:</p>
+    <p>Snap es un sistema de paquetes universal para Linux que facilita la instalación de aplicaciones en cualquier
+        distribución. Si prefieres usar Snap, puedes instalar VS Code con un solo comando:</p>
     <pre>sudo snap install --classic code</pre>
 
     <h2>Instalación mediante Flatpak (para cualquier distribución de Linux)</h2>
-    <p>Flatpak es otra opción para instalar aplicaciones en múltiples distribuciones de Linux. Para instalar VS Code con Flatpak, usa el siguiente comando:</p>
+    <p>Flatpak es otra opción para instalar aplicaciones en múltiples distribuciones de Linux. Para instalar VS Code con
+        Flatpak, usa el siguiente comando:</p>
     <pre>flatpak install flathub com.visualstudio.code</pre>
     <p>Para ejecutar VS Code con Flatpak, usa:</p>
     <pre>flatpak run com.visualstudio.code</pre>
 
     <h2>Verificación de la instalación</h2>
-    <p>Para asegurarnos de que Visual Studio Code se instaló correctamente, abrimos una terminal y escribimos el comando:</p>
+    <p>Para asegurarnos de que Visual Studio Code se instaló correctamente, abrimos una terminal y escribimos el
+        comando:</p>
     <pre>code</pre>
     <p>Esto debería abrir Visual Studio Code.</p>
 
     <h1>Instalación de Visual Studio Code en MacOS</h1>
-    
+
     <h2>Pasos de instalación</h2>
-    <p>1. Dirígete al sitio web oficial de Visual Studio Code: <a href="https://code.visualstudio.com">https://code.visualstudio.com</a> y haz clic en el botón "Download for Mac". Esto descargará el archivo .zip de la última versión estable.</p>
+    <p>1. Dirígete al sitio web oficial de Visual Studio Code: <a
+            href="https://code.visualstudio.com">https://code.visualstudio.com</a> y haz clic en el botón "Download for
+        Mac". Esto descargará el archivo .zip de la última versión estable.</p>
     <p>2. Una vez descargado el archivo .zip, lo descomprimimos.</p>
     <p>3. Arrastra y suelta el archivo "Visual Studio Code.app" en la carpeta Aplicaciones de la Mac.</p>
     <p>4. Abre la carpeta Aplicaciones y haz doble clic en "Visual Studio Code.app" para abrirlo.</p>
-    <p>5. Si es la primera vez que abres una aplicación descargada de Internet, macOS podría pedir confirmación para abrirla.</p>
+    <p>5. Si es la primera vez que abres una aplicación descargada de Internet, macOS podría pedir confirmación para
+        abrirla.</p>
     <p>6. Para configurar Visual Studio Code, instala extensiones y personaliza la interfaz según tus necesidades.</p>
 
     <h1>Instalación de NetBeans</h1>
 
     <h2>Instalación de NetBeans en Windows</h2>
-    <p>1. Dirígete a la página oficial de NetBeans: <a href="https://netbeans.apache.org/">https://netbeans.apache.org/</a>.</p>
+    <p>1. Dirígete a la página oficial de NetBeans: <a
+            href="https://netbeans.apache.org/">https://netbeans.apache.org/</a>.</p>
     <p>2. Haz clic en "Download" y selecciona la versión para Windows.</p>
-    <p>3. Inicia la instalación haciendo doble clic en el archivo descargado (.exe) y sigue los pasos del instalador.</p>
+    <p>3. Inicia la instalación haciendo doble clic en el archivo descargado (.exe) y sigue los pasos del instalador.
+    </p>
     <p>4. Elige las herramientas necesarias (Java, PHP, C++, etc.) y selecciona la ubicación de instalación.</p>
     <p>5. Una vez finalizada la instalación, abre NetBeans desde el menú de inicio.</p>
 
@@ -90,7 +125,8 @@
     <pre>netbeans</pre>
 
     <h2>Instalación de NetBeans en MacOS</h2>
-    <p>1. Dirígete a la página oficial de NetBeans: <a href="https://netbeans.apache.org/">https://netbeans.apache.org/</a>.</p>
+    <p>1. Dirígete a la página oficial de NetBeans: <a
+            href="https://netbeans.apache.org/">https://netbeans.apache.org/</a>.</p>
     <p>2. Descarga el archivo .dmg para macOS y abre el archivo descargado.</p>
     <p>3. Arrastra el icono de NetBeans a la carpeta Aplicaciones.</p>
     <p>4. Abre NetBeans desde la carpeta Aplicaciones y realiza la configuración inicial.</p>
@@ -98,7 +134,8 @@
     <h1>Instalación de IntelliJ IDEA</h1>
 
     <h2>Instalación de IntelliJ IDEA en Windows</h2>
-    <p>1. Dirígete a la página oficial de IntelliJ IDEA: <a href="https://www.jetbrains.com/idea/download/">https://www.jetbrains.com/idea/download/</a>.</p>
+    <p>1. Dirígete a la página oficial de IntelliJ IDEA: <a
+            href="https://www.jetbrains.com/idea/download/">https://www.jetbrains.com/idea/download/</a>.</p>
     <p>2. Descarga el instalador para Windows (.exe) y sigue los pasos del asistente de instalación.</p>
     <p>3. Abre IntelliJ IDEA desde el menú de inicio y realiza las configuraciones iniciales como el JDK.</p>
     <p>4. Verifica la instalación creando un nuevo proyecto.</p>
@@ -121,7 +158,8 @@
     <h1>Instalación de Eclipse</h1>
 
     <h2>Instalación de Eclipse en Windows</h2>
-    <p>1. Dirígete a la página oficial de Eclipse: <a href="https://www.eclipse.org/downloads/">https://www.eclipse.org/downloads/</a>.</p>
+    <p>1. Dirígete a la página oficial de Eclipse: <a
+            href="https://www.eclipse.org/downloads/">https://www.eclipse.org/downloads/</a>.</p>
     <p>2. Descarga el archivo .exe y sigue las instrucciones del asistente de instalación.</p>
     <p>3. Selecciona Eclipse IDE for Java Developers y espera a que se complete la instalación.</p>
     <p>4. Abre Eclipse, selecciona el workspace y asegúrate de que el JDK esté instalado.</p>
@@ -142,6 +180,7 @@
     <p>3. Abre Eclipse desde la carpeta Aplicaciones y realiza la configuración inicial.</p>
 
 
-    <script src="./ides.js" ></script>
+    <script src="./ides.js"></script>
 </body>
+
 </html>
