@@ -32,8 +32,9 @@
     </p>
     <h2>Instalación de VSCode</h2>
     <h3>Como instalar VSCode para Windows: </h3>
-    <p id="parrafo2">1- Principalmente debemos ir a la página oficial de Visual Studio Code
-        https://code.visualstudio.com/ y hacer clic en "Download for Windows". Y se procederá a descargar el archivo de
+    <p id="parrafo2">1- Principalmente debemos ir a la página oficial de Visual Studio Code: <a
+        href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
+         y hacer clic en "Download for Windows". Y se procederá a descargar el archivo de
         instalación. </p>
     <p id="parrafo3">2- Una vez descargado el archivo hacemos doble clic en el “VSCodeSetup-x64-x.x.x.exe” para comenzar
         la instalación. El asistente de instalación te guiará mientras estás en el proceso. Se puede elegir la carpeta
@@ -51,14 +52,20 @@
         poco, en este caso para las que son basadas en Debian y Ubuntu y lo haremos utilizando el repositorio de
         Microsft.</p>
     <p id="parrafo1">1- Abriremos una terminal y pondremos la clave del repositorio de
-        Microsoft:<mark>https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor >
+        Microsoft:https://packages.microsoft.com/keys/microsoft.asc | 
+        gpg --dearmor >
             /usr/share/keyrings/microsoft-archive-keyring.gpg</mark>
         Y agregaremos el repositorio de VIsual Studio Code:
-        <mark>sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-archive-keyring.gpg]
-            https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</mark>
+        <pre>sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-archive-keyring.gpg]
+https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</pre>
     </p>
-    <p id="parrafo2">2- Actualizaremos la lista de paquetes: <mark> sudo apt update</mark></p>
-    <p id="parrafo3">3- Y finalmente instalaremos Visual Studio Code <mark>sudo apt install code</mark> </p>
+    
+    <p id="parrafo2">2- Actualizaremos la lista de paquetes: </p>
+    <pre>sudo apt update</pre>
+    
+    <p id="parrafo3">3- Y finalmente instalaremos Visual Studio Code</p>
+    <pre>sudo apt install code</pre>
+    
     <h3>Instalación en Fedora</h3>
     <p>Iremos a la página oficial de Visual Studio Code: <a
             href="https://code.visualstudio.com/Download">https://code.visualstudio.com/Download</a> y seleccionaremos
@@ -87,7 +94,6 @@
     <p>Para ejecutar VS Code con Flatpak, usa:</p>
     <pre>flatpak run com.visualstudio.code</pre>
 
-    <h3>Verificación de la instalación</h3>
     <p>Para asegurarnos de que Visual Studio Code se instaló correctamente, abrimos una terminal y escribimos el
         comando:</p>
     <pre>code</pre>
@@ -119,7 +125,7 @@
     <h3>Instalación de NetBeans en Windows</h3>
     <p>1. Dirígete a la página oficial de NetBeans: <a
             href="https://netbeans.apache.org/">https://netbeans.apache.org/</a>.</p>
-    <p>2. Haz clic en "Download" y selecciona la versión para Windows.</p>
+            <p>2. Haz clic en "Download" y selecciona la versión para Windows.</p>
     <p>3. Inicia la instalación haciendo doble clic en el archivo descargado (.exe) y sigue los pasos del instalador.
     </p>
     <p>4. Elige las herramientas necesarias (Java, PHP, C++, etc.) y selecciona la ubicación de instalación.</p>
@@ -129,11 +135,15 @@
     <p>1. Visita la página oficial de NetBeans y descarga el archivo .sh para Linux.</p>
     <p>2. Asegúrate de tener instalado el JDK en tu sistema. Si no lo tienes, puedes instalarlo usando:</p>
     <pre>sudo apt install openjdk-11-jdk</pre>
+    
     <p>3. Da permisos de ejecución al archivo descargado:</p>
     <pre>chmod +x netbeans-X.X-bin-linux-x64.sh</pre>
+    
     <p>4. Ejecuta el instalador:</p>
     <pre>./netbeans-X.X-bin-linux-x64.sh</pre>
+    
     <p>5. Sigue las instrucciones del instalador y selecciona la carpeta de instalación.</p>
+    
     <p>6. Una vez completada la instalación, abre NetBeans desde el menú de aplicaciones o con el comando:</p>
     <pre>netbeans</pre>
 
