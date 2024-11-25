@@ -4,9 +4,9 @@ body {
     font-family: 'Roboto Mono', monospace;
     /* Usa la fuente Roboto Mono */
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #222;
+    margin: 0px;
+    padding: 250px;
+    background: #000000;
     /* Fondo oscuro */
     color: #eee;
     /* Texto claro */
