@@ -1,42 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Intermodular</title>
-    <style>
-        body {
-            background-color: #101314; /* Fondo de color negro */
-            font-family: Arial, sans-serif;
-            color:#af8787;
-        }
-
-        
-        h1 {
-            color: #0ff; /* Rojo brillante para el título */
-            text-shadow: 2px 2px 8px #0ff; /* Sombra suave en el título */
-        }    
-        
-        h3 {
-            color: #22c5e2; /* #333 */
-            text-shadow: 0 0 10px #333, 0 0 20px #333#333, 0 0 30px #333, 0 0 40px #333;
-        }
-        a {
-            color: #FFFFFF; /* Color blanco para los enlaces */
-            text-decoration: none; /* Quita el subrayado */
-        }
-
-        a:hover {
-            color: #8136a3; /* Color para los enlaces al pasar el ratón */
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Interactivo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Proyecto Intermodular</h1>
-    <h3>Haz clic sobre los enlaces para más información:</h3>
-    <p>Haz clic en el enlace <a href="SectorProductivo/sector.html">Sector Productivo</a> para ir al sitio web.</p>
-    <p>Haz clic en el enlace <a href="DesarrolloDeSoftware/Desarrollo.html">Desarrollo de Software</a> para ir al sitio web.</p>
-    <p>Haz clic en el enlace <a href="IDES/ides.html">IDES</a> para ir al sitio web.</p>
+  <div class="container">
+    <h1>Bienvenido al Portal Interactivo</h1>
+    <p>Haz clic en las imágenes para explorar más</p>
+    
+    <div class="grid">
+      <!-- Imagen 1 -->
+      <a href="SectorProductivo/sector.html" class="link">
+        <img src="imagenees/Sector.jpg" alt="SectorProductivo" class="image">
+      </a>
+      
+      <!-- Imagen 2 -->
+      <a href="DesarrolloDeSoftware/Desarrollo.html" class="link">
+        <img src="" alt="" class="image">
+      </a>
+      
+      <!-- Imagen 3 -->
+      <a href="IDES/ides.html" class="link">
+        <img src="imagen3.jpg" alt="IDES" class="image">
+      </a>
+      
+    </div>
+  </div>
 </body>
 </html>
