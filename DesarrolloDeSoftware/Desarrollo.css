@@ -4,17 +4,15 @@ body {
     font-family: 'Roboto Mono', monospace;
     /* Usa la fuente Roboto Mono */
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #222;
+    margin: 0px;
+    padding: 175px;
+    padding-top: 10px;
+    background: #000000;
     /* Fondo oscuro */
     color: #eee;
     /* Texto claro */
 }
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     color: #0ff;
     /* Color azul neón para los encabezados */
     text-shadow: 0 0 10px #0ff;
@@ -23,8 +21,8 @@ h3 {
 
 h1 {
     text-align: center;
-    padding: 20px;
-    background: linear-gradient(to right, #004cff, #00c8ff);
+    padding: 10px;
+    background:  #00c8ff;
     /* Degradado azul */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -33,7 +31,7 @@ h1 {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px;
+    margin: 0px;
     background: rgba(0, 0, 0, 0.5);
     /* Fondo semitransparente */
     border-radius: 10px;
@@ -44,6 +42,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin: 0;
+    font-size: 13px;
 }
 
 nav a {
@@ -88,4 +87,25 @@ img {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
     /* Sombra con efecto neón */
+}
+
+
+#botonSubir {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background-color: #000000;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#botonSubir:hover {
+    background: linear-gradient(to right, #004cff, #00c8ff);
+    color: #222;
 }
