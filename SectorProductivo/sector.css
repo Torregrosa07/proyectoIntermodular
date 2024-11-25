@@ -58,13 +58,13 @@ nav a {
 nav a:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
     /* Degradado azul al pasar el ratón */
-    color: #222;
+    color: #000000;
 }
 
 section {
     margin-bottom: 20px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     /* Fondo blanco semitransparente */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
