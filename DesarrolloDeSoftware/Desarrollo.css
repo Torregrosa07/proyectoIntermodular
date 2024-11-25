@@ -5,7 +5,8 @@ body {
     /* Usa la fuente Roboto Mono */
     line-height: 1.6;
     margin: 0px;
-    padding: 250px;
+    padding: 175px;
+    padding-top: 100px;
     background: #000000;
     /* Fondo oscuro */
     color: #eee;
@@ -20,7 +21,7 @@ h1, h2, h3 {
 
 h1 {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background:  #00c8ff;
     /* Degradado azul */
     -webkit-background-clip: text;
