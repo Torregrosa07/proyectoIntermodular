@@ -89,3 +89,24 @@ img {
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
     /* Sombra con efecto neón */
 }
+
+
+#botonSubir {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background-color: #000000;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#botonSubir:hover {
+    background: linear-gradient(to right, #004cff, #00c8ff);
+    color: #222;
+}
