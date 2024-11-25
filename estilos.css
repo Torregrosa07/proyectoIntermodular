@@ -1,0 +1,49 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para los títulos */
+h1 {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #004cff, #00c8ff);
+    /* Degradado azul */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Estilo para los enlaces */
+.link {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Estilo para las imágenes */
+.image {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de hover para las imágenes */
+.image:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para la cuadrícula de imágenes */
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
