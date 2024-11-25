@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: #000000;
     margin: 0;
     padding: 0;
@@ -10,6 +12,15 @@ body {
 .container {
     text-align: center;
     margin-top: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #0ff;
+    /* Color azul neón para los encabezados */
+    text-shadow: 0 0 10px #0ff;
+    /* Efecto neón */
 }
 
 /* Estilo para los títulos */
