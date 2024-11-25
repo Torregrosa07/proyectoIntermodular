@@ -5,7 +5,8 @@ body {
     /* Usa la fuente Roboto Mono */
     line-height: 1.6;
     margin: 0px;
-    padding: 250px;
+    padding: 175px;
+    padding-top: 100px;
     background: #000000;
     /* Fondo oscuro */
     color: #eee;
