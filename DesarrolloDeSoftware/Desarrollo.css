@@ -11,10 +11,7 @@ body {
     color: #eee;
     /* Texto claro */
 }
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     color: #0ff;
     /* Color azul neón para los encabezados */
     text-shadow: 0 0 10px #0ff;
@@ -24,7 +21,7 @@ h3 {
 h1 {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to right, #004cff, #00c8ff);
+    background:  #00c8ff;
     /* Degradado azul */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
