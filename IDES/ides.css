@@ -4,8 +4,8 @@ body {
     font-family: 'Roboto Mono', monospace;
     /* Usa la fuente Roboto Mono */
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 250px;
     background: #000000;
     /* Fondo oscuro */
     color: #eee;
@@ -24,7 +24,7 @@ h3 {
 h1 {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to right, #004cff, #00c8ff);
+    background: #00c8ff;
     /* Degradado azul */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -57,7 +57,7 @@ nav a {
 
 nav a:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
-    /* degradado azul al pasar el ratón por el menú de navegación  */
+    /* Degradado azul al pasar el ratón */
     color: #222;
 }
 
@@ -88,4 +88,25 @@ img {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
     /* Sombra con efecto neón */
+}
+
+
+#botonSubir {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background-color: #000000;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#botonSubir:hover {
+    background: linear-gradient(to right, #004cff, #00c8ff);
+    color: #222;
 }
