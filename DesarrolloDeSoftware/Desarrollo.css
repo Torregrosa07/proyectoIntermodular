@@ -25,7 +25,7 @@ h1 {
     background:  #00c8ff;
     /* Degradado azul */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /*Reemplazar este webkit*/
 }
 
 nav ul {
@@ -109,3 +109,7 @@ img {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
 }
+@media(max-width: 450px){
+    
+}
+
