@@ -4,39 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Intermodular</title>
+    <!-- Agregar fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            background-color: #101314; /* Fondo de color negro */
-            font-family: Arial, sans-serif;
-            color:#af8787;
+            background: linear-gradient(135deg, #131314, #1b363a); /* Fondo degradado */
+            font-family: 'Roboto', sans-serif; /* Fuente moderna */
+            color: #ffffff; /* Color del texto */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Para centrar todo el contenido */
+            text-align: center;
+            flex-direction: column;
         }
 
-        
         h1 {
-            color: #0ff; /* Rojo brillante para el título */
-            text-shadow: 2px 2px 8px #0ff; /* Sombra suave en el título */
-        }    
-        
-        h3 {
-            color: #22c5e2; /* #333 */
-            text-shadow: 0 0 10px #333, 0 0 20px #333#333, 0 0 30px #333, 0 0 40px #333;
+            color: #0ff; /* Título de color azul brillante */
+            text-shadow: 2px 2px 8px rgba(27, 34, 34, 0.5); /* Sombra suave */
+            font-size: 3em;
+            margin-bottom: 20px;
         }
+
+        h3 {
+            color: #1dd7f0; /* Subtítulo con color azul claro */
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 25px rgba(0, 255, 255, 0.3);
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
         a {
-            color: #FFFFFF; /* Color blanco para los enlaces */
-            text-decoration: none; /* Quita el subrayado */
+            color: #9680e4; /* Color de los enlaces */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         a:hover {
-            color: #8136a3; /* Color para los enlaces al pasar el ratón */
+            color: #8136a3; /* Color de los enlaces al pasar el ratón */
+            transform: scale(1.1); /* Efecto de ampliación */
         }
 
+        /* Agregar un contenedor para los enlaces con más espaciado */
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Estilo para el contenedor de la página */
+        .content-container {
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(26, 27, 27, 0.5);
+        }
     </style>
 </head>
 <body>
-    <h1>Proyecto Intermodular</h1>
-    <h3>Haz clic sobre los enlaces para más información:</h3>
-    <p>Haz clic en el enlace <a href="SectorProductivo/sector.html">Sector Productivo</a> para ir al sitio web.</p>
-    <p>Haz clic en el enlace <a href="DesarrolloDeSoftware/Desarrollo.html">Desarrollo de Software</a> para ir al sitio web.</p>
-    <p>Haz clic en el enlace <a href="IDES/ides.html">IDES</a> para ir al sitio web.</p>
+    <div class="content-container">
+        <h1>Proyecto Intermodular</h1>
+        <h3>Haz clic sobre los enlaces para más información:</h3>
+        <div class="link-container">
+            <p><a href="SectorProductivo/sector.html">Sector Productivo</a></p>
+            <p><a href="DesarrolloDeSoftware/Desarrollo.html">Desarrollo de Software</a></p>
+            <p><a href="IDES/ides.html">IDES</a></p>
+        </div>
+    </div>
 </body>
 </html>
