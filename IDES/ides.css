@@ -111,3 +111,34 @@ img {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
 }
+
+.home-button {
+    background-color: #9dc3fc; /* Color verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace ;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover del botón */
+  .home-button:hover {
+    background-color: #000000;
+  }
+  
+  /* Menú de navegación */
+  nav {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  /* Contenedor del contenido */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  

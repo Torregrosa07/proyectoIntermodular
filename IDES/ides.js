@@ -1,40 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Obtener todos los elementos de la lista de navegación
-    const navItems = document.querySelectorAll('nav ul li a');
+    // Verificar si el botón "Ir al Inicio" existe en la página
+    var botonHome = document.getElementById("homeButton");
 
-    // Añadir un evento de clic a cada elemento de la lista
-    navItems.forEach(item => {
-        item.addEventListener('click', function (event) {
-            event.preventDefault(); // Evitar el comportamiento por defecto del enlace
+    if (botonHome) {
+        botonHome.addEventListener('click', function () {
+            // Redirigir a la página principal
+            window.location.href = "../index.html";
 
-            // Obtener el ID del enlace
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-
-            // Desplazarse suavemente a la sección correspondiente
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
         });
-    });
-});
-// Obtener el botón
-var botonSubir = document.getElementById("botonSubir");
-
-// Mostrar el botón cuando se hace scroll
-window.onscroll = function () {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop
-        > 20) {
-        botonSubir.style.display = "block";
-    } else {
-        botonSubir.style.display = "none";
-
     }
-};
 
-// Subir al hacer clic
-botonSubir.onclick = function () {
-    document.body.scrollTop = 0; // Para Safari
-    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera   
+    // Mostrar el botón de subir cuando se hace scroll
+    var botonScroll = document.getElementById("botonSubir");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            botonScroll.style.display = "block";
+        } else {
+            botonScroll.style.display = "none";
+        }
+    };
 
-};
+    // Subir al hacer clic en el botón de subir
+    botonScroll.onclick = function () {
+        document.body.scrollTop = 0; // Para Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+    };
+});
