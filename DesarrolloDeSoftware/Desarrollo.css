@@ -1,41 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    /* Usa la fuente Roboto Mono */
+    font-family: 'Roboto Mono', 'monospace';
     line-height: 1.6;
     margin: 0px;
     padding: 175px;
-    padding-top: 10px;
+    /* Reducido para dar más espacio al contenido */
     background: #000000;
-    /* Fondo oscuro */
     color: #eee;
-    /* Texto claro */
-}
-h1, h2, h3 {
-    color: #0ff;
-    /* Color azul neón para los encabezados */
-    text-shadow: 0 0 10px #0ff;
-    /* Efecto neón */
 }
 
+/* Estilos para los encabezados */
+h1,
+h2,
+h3 {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+/* Estilos para el titulo */
 h1 {
     text-align: center;
     padding: 10px;
-    background: #00c8ff;  
-    background-clip: text; 
-    color: transparent; 
-  }
+    background: #00c8ff;
+    background-clip: text;
+    color: transparent;
+}
 
+/* Estilos para la navegación */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0px;
     background: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente */
     border-radius: 10px;
     overflow: hidden;
-    /* Para que el efecto degradado no se salga del contenedor */
 }
 
 nav li {
@@ -50,34 +49,35 @@ nav a {
     color: #eee;
     padding: 15px 20px;
     transition: background 0.3s, color 0.3s;
-    /* Transiciones suaves */
 }
 
 nav a:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
-    /* Degradado azul al pasar el ratón */
     color: #222;
 }
 
+/* Estilos para las secciones */
 section {
     margin-bottom: 20px;
-    padding: 20px;
     background: rgba(255, 255, 255, 0.1);
-    /* Fondo blanco semitransparente */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-    /* Sombra con efecto neón */
 }
 
-article {
+/* Estilos para los artículos dentro de las secciones */
+.articulo {
+    padding: 20px;
+    /* El padding se mueve al div .articulo */
     margin-bottom: 20px;
 }
 
+/* Estilos para listas */
 ul,
 ol {
     padding-left: 40px;
 }
 
+/* Estilos para imágenes */
 img {
     max-width: 100%;
     height: auto;
@@ -85,30 +85,40 @@ img {
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-    /* Sombra con efecto neón */
 }
 
-
+/* Estilos para el botón de "subir" */
 #botonSubir {
-  display: none;
-  position: fixed;
-  bottom: 60px;
-  right: 20px;
-  background-color: #000000;
-  color: #0ff;
-  text-shadow: 0 0 10px #0ff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: #000000;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 #botonSubir:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
 }
-@media(max-width: 450px){
-    
-}
 
+/* Media query para pantallas pequeñas (opcional) */
+@media(max-width: 450px) {
+
+    /* Puedes añadir estilos específicos para pantallas pequeñas aquí */
+    nav li {
+        font-size: 11px;
+        /* Ajusta el tamaño de la fuente en el menú */
+    }
+
+    .articulo {
+        padding: 10px;
+        /* Reduce el padding en pantallas pequeñas */
+    }
+}
