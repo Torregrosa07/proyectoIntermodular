@@ -22,11 +22,10 @@ h1, h2, h3 {
 h1 {
     text-align: center;
     padding: 10px;
-    background:  #00c8ff;
-    /* Degradado azul */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /*Reemplazar este webkit*/
-}
+    background: #00c8ff;  
+    background-clip: text; 
+    color: transparent; 
+  }
 
 nav ul {
     list-style: none;

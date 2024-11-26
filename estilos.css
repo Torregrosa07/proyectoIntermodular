@@ -29,8 +29,8 @@ h1 {
     padding: 20px;
     background: linear-gradient(to right, #004cff, #00c8ff);
     /* Degradado azul */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent; 
 }
 
 p {
@@ -38,8 +38,8 @@ p {
     padding: 20px;
     background: linear-gradient(to right, #004cff, #00c8ff);
     /* Degradado azul */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent; 
 }
 
 /* Estilo para los enlaces */
@@ -115,34 +115,4 @@ p {
     }
 
 }
-/* Estilos del botón Home */
-.home-button {
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interior */
-    font-size: 16px; /* Tamaño de la fuente */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Aparece como puntero */
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Cambio de color al pasar el mouse */
-  .home-button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Estilo para cuando el botón está en la parte superior */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  /* Contenedor para el contenido */
-  .container {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
-  }
+>>>>>>> aec2192fe440be5640391b3d173b1ae05cbdae0e
