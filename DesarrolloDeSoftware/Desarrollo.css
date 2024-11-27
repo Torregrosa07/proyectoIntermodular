@@ -25,6 +25,14 @@ h3 {
 .contenido-codigo img {
     margin-left: 20px; /* Espacio entre el texto y la imagen */
 }
+.contenido-codigo-objeto {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.contenido-codigo-objeto img {
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
 
 /* Estilos para el titulo */
 h1 {
