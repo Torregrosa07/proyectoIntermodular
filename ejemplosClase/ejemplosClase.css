@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Sombra con efecto neón */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #0ff; /* Borde con color neón */
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el encabezado */
+    color: #0ff; /* Texto neón para el encabezado */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo oscuro para filas pares */
+}
+
+tr:hover {
+    background-color: rgba(0, 255, 255, 0.2); /* Fondo neón al pasar el ratón */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Sombra neón al pasar el ratón */
+}

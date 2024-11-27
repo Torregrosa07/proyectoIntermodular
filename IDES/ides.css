@@ -96,8 +96,9 @@ img {
 
 /* Botón para ir al inicio */
 .home-button {
-    background-color: #9dc3fc;
-    color: white;
+    background-color: #000000;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
