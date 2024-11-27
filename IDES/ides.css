@@ -1,50 +1,51 @@
+/* Cargar la fuente Roboto Mono desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
     font-family: 'Roboto Mono', monospace;
-    /* Usa la fuente Roboto Mono */
     line-height: 1.6;
-    margin: 0px;
-    padding: 175px;
-    padding-top: 100px;
-    background: #000000;
-    /* Fondo oscuro */
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
     color: #eee;
-    /* Texto claro */
+    /* Fondo oscuro y texto claro */
 }
 
-h1,
-h2,
-h3 {
-    color: #0ff;
-    /* Color azul neón para los encabezados */
-    text-shadow: 0 0 10px #0ff;
-    /* Efecto neón */
-}
-
+/* Encabezado principal */
 h1 {
     text-align: center;
     padding: 20px;
     background: #00c8ff;
-    /* Degradado azul */
+    color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #0ff;
+}
+
+/* Estilo de encabezados secundarios */
+h2, h3 {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+/* Estilo del menú de navegación */
+nav {
+    margin: 20px auto;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px;
+    margin: 0;
+    display: inline-block;
     background: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente */
     border-radius: 10px;
     overflow: hidden;
-    /* Para que el efecto degradado no se salga del contenedor */
 }
 
 nav li {
     display: inline-block;
-    margin: 0;
 }
 
 nav a {
@@ -52,62 +53,125 @@ nav a {
     text-decoration: none;
     color: #eee;
     padding: 15px 20px;
+    font-size: 18px;
     transition: background 0.3s, color 0.3s;
-    /* Transiciones suaves */
 }
 
 nav a:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
-    /* Degradado azul al pasar el ratón */
     color: #222;
 }
 
-section {
+/* Contenedor de secciones */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo de las cajas (section y article) */
+section, article {
     margin-bottom: 20px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    /* Fondo blanco semitransparente */
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-    /* Sombra con efecto neón */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Sombra con efecto neón */
 }
 
-article {
-    margin-bottom: 20px;
-}
-
+/* Listas ordenadas y desordenadas */
 ul,
 ol {
     padding-left: 40px;
 }
 
+/* Estilo para las imágenes */
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-    /* Sombra con efecto neón */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Sombra con efecto neón */
 }
 
+/* Botón para ir al inicio */
+.home-button {
+    background-color: #9dc3fc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    transition: background-color 0.3s;
+}
 
+.home-button:hover {
+    background-color: #000000;
+}
+
+/* Estilos para el botón flotante de subir */
 #botonSubir {
-  display: none;
-  position: fixed;
-  bottom: 60px;
-  right: 20px;
-  background-color: #000000;
-  color: #0ff;
-  text-shadow: 0 0 10px #0ff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: #000000;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s, color 0.3s;
 }
 
 #botonSubir:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
+}
+
+/* Asegurarse que los botones en las secciones (como en la barra de navegación) tengan un estilo consistente */
+button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: #fff;
+    background: #0ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #0ff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover de los botones */
+button:hover {
+    background-color: #004cff;
+    transform: translateY(-2px);
+}
+
+/* Añadir márgenes y padding para una mejor presentación */
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 25px;
+}
+
+img {
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 40px;
 }
