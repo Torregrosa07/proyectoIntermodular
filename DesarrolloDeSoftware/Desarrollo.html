@@ -7,6 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./desarrollo.css">
+    <style>
+        /* Estilo para el botón de subir */
+        #botonSubir {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            display: none; /* Inicialmente oculto */
+        }
+
+        #botonSubir:hover {
+            background-color: #0056b3;
+        }
+    </style>
 
 <body>
     <h1>Desarrollo de Software</h1>
@@ -38,36 +58,41 @@
                     el
                     software y el hardware hace operativo un ordenador (u otro dispositivo), es decir, el software envía
                     instrucciones que el hardware ejecuta, haciendo posible su funcionamiento.</p>
-            </article>
+                </article>
+           <img src="ejemploimagencharly.jpg" width="400" height="400">
+                      
         </section>
-
-
         <section id="conceptos-codigo">
             <h2>Código Fuente</h2>
             <article>
+                <div class="texto-con-imagen">
                 <p>El código fuente es el código que resulta de la compilación del código fuente. Durante
                     la compilación, el compilador traduce el código fuente (escrito en un lenguaje de alto nivel) a un
                     lenguaje de bajo nivel, generalmente lenguaje de máquina o lenguaje intermedio, que puede ser
                     entendido
                     por la máquina, pero no es directamente ejecutable aún.</p>
-
+                    <img src="codigofuentecharly.jpg" alt="codigo fuente" class="imagen-al-lado" width="250" height="200">
+                </div>
                 <h2>Código Objeto</h2>
                 <p>El código objeto es el código que resulta de la compilación del código fuente. Durante
                     la compilación, el compilador traduce el código fuente (escrito en un lenguaje de alto nivel) a un
                     lenguaje de bajo nivel, generalmente lenguaje de máquina o lenguaje intermedio, que puede ser
                     entendido
                     por la máquina, pero no es directamente ejecutable aún.</p>
+                    <img src="codigoobjetoluna.jpg" alt="codigo obyeto" class="imagen-al-lado" width="250" height="200">
 
                 <h2>Código Ejecutable</h2>
                 <p>El código ejecutable es el archivo final que puede ser ejecutado directamente por la
                     computadora. Es el código objeto que ha sido procesado por un enlazador (linker), que
                     lo combina con bibliotecas necesarias y otros archivos de código objeto para generar un archivo
                     independiente que puede correr en un sistema operativo determinado.</p>
+                    <img src="desarrolloejecutablexd.jpg" alt="codigo obyeto" class="imagen-al-lado" width="250" height="200">
             </article>
         </section>
 
         <section id="lenguajes-de-programacion">
             <h2>Lenguajes de Programación</h2>
+            <img src="lenguajesdeprogramacion.jpg" alt="lenguajes programación" class="imagen-al-lado" width="250" height="200">
             <article>
                 <p>Imagina que quieres decirle a una computadora qué hacer. No puedes simplemente hablarle en español o
                     inglés, ¿verdad? Necesitas un lenguaje que la computadora entienda. ¡Ahí es donde entran los
@@ -180,7 +205,7 @@
                 <li>Disminuir gastos y peligros en proyectos de creación de software.</li>
             </ul>
         </section>
-        <section id="visual-studio-code"></section>
+        
         <section id="desarrollo-aplicaciones">
             <h2>Fases del desarrollo de una aplicación informática</h2>
             <article>
@@ -255,7 +280,49 @@
 
 
         <script src="./desarrollo.js"></script>
+
     </main>
+</body>
+
+<!-- boton para subir -->
+<button id="botonSubir">Subir</button>
+</main>
+
+<script src="./desarrollo.js"></script>
+
+<script>
+    // Código JS para desplazamiento suave
+    document.addEventListener('DOMContentLoaded', function () {
+        const navItems = document.querySelectorAll('nav ul li a');
+        navItems.forEach(item => {
+            item.addEventListener('click', function (event) {
+                event.preventDefault(); // Evitar el comportamiento por defecto del enlace
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+
+    // Mostrar el botón cuando se hace scroll
+    var botonSubir = document.getElementById("botonSubir");
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            botonSubir.style.display = "block";
+        } else {
+            botonSubir.style.display = "none";
+        }
+    };
+
+    // Subir al hacer clic
+    botonSubir.onclick = function () {
+        document.body.scrollTop = 0; // Para Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+    };
+</script>
 </body>
 
 </html>
