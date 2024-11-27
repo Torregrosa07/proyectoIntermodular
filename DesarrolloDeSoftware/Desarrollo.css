@@ -17,6 +17,14 @@ h3 {
     color: #0ff;
     text-shadow: 0 0 10px #0ff;
 }
+.contenido-codigo {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.contenido-codigo img {
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
 
 /* Estilos para el titulo */
 h1 {
