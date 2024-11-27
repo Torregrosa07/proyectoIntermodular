@@ -65,7 +65,7 @@ section {
 }
 
 /* Estilos para los artículos dentro de las secciones */
-.articulo {
+.informacion {
     padding: 20px;
     /* El padding se mueve al div .articulo */
     margin-bottom: 20px;
@@ -117,7 +117,7 @@ img {
         /* Ajusta el tamaño de la fuente en el menú */
     }
 
-    .articulo {
+    .informacion {
         padding: 10px;
         /* Reduce el padding en pantallas pequeñas */
     }
