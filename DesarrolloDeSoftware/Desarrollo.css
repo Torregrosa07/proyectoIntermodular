@@ -29,6 +29,15 @@ h3 {
     display: flex;
     align-items: center; /* Alinea verticalmente los elementos */
 }
+.contenido-codigo-ejecutable {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen con el texto */
+    justify-content: space-between; /* Se asegura de que haya espacio entre el texto y la imagen */
+}
+
+.contenido-codigo-ejecutable img {
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
 
 .contenido-codigo-objeto img {
     margin-left: 20px; /* Espacio entre el texto y la imagen */
@@ -41,6 +50,37 @@ h1 {
     background: #00c8ff;
     background-clip: text;
     color: transparent;
+}
+.contenido-lenguajes {
+    display: flex;
+    align-items: center; /* Alinea la imagen y el texto verticalmente */
+    justify-content: flex-start; /* Alinea los elementos de izquierda a derecha */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.contenido-lenguajes img {
+    width: 250px;
+    height: 250px;
+}
+
+.texto-lenguajes {
+    flex: 1; /* Hace que el texto ocupe el resto del espacio disponible */
+}
+
+@media (max-width: 768px) {
+    .contenido-lenguajes {
+        flex-direction: column; /* Cambia el diseño a vertical cuando la pantalla sea pequeña */
+        align-items: center; /* Centra los elementos en la pantalla */
+    }
+
+    .contenido-lenguajes img {
+        width: 200px; /* Reduce el tamaño de la imagen en pantallas pequeñas */
+        height: 200px;
+    }
+
+    .texto-lenguajes {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
 }
 
 /* Estilos para la navegación */
