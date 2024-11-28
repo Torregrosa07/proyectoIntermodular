@@ -202,24 +202,41 @@ button:hover {
     background-color: #000000;
 }
 
-/* Estilo para el contenedor de metodologías */
-.metodologias-columnas {
+.metodologias-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.metodologias-container div {
     display: flex;
-    justify-content: space-between; /* Espacio entre las dos columnas */
-    gap: 20px; /* Espacio entre las columnas */
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Estilo para cada columna */
-.metodologias-columnas .columna {
-    flex: 1; /* Cada columna ocupa el 50% del espacio */
-    padding: 20px; /* Relleno dentro de cada columna */
-    box-sizing: border-box; /* Asegura que el relleno no se agregue al tamaño total */
+.metodologias-container h3 {
+    text-align: center;
 }
 
-/* Ajustar el tamaño de las imágenes en las columnas */
-.metodologias-columnas .columna img {
-    max-width: 100%;
-    height: auto; /* Hace que la altura se ajuste proporcionalmente */
+.metodologias-container img {
+    margin-top: 10px;
+}
+
+.metodologias-container ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.metodologias-agiles, .devops {
+    
+}
+
+.lean-software, .design-thinking {
+    
+}
+.devops-img {
+    width: 500px;  /* Aumentamos el ancho de la imagen */
+    height: 900px; /* Reducimos la altura para hacerla más alargada horizontalmente */
 }
 
 /* Media query para pantallas pequeñas (opcional) */
