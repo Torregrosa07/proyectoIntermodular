@@ -143,6 +143,25 @@ img {
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
+button {
+    font-family: 'Roboto Mono', 'monospace';
+    font-size: 16px;
+    color: #fff;
+    background: #0ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #0ff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover de los botones */
+button:hover {
+    background-color: #004cff;
+    transform: translateY(-2px);
+}
+
 /* Estilos para el botón de "subir" */
 #botonSubir {
     display: none;
@@ -150,19 +169,21 @@ img {
     bottom: 60px;
     right: 20px;
     background-color: #000000;
-    color: #0ff;
-    text-shadow: 0 0 10px #0ff;
-    padding: 10px 15px;
+    color: #0ff; 
+    text-shadow: 0 0 10px #0ff; 
+    padding: 10px 20px; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
-    transition: background 0.3s, color 0.3s;
-}
-#botonSubir:hover {
-    background: linear-gradient(to right, #004cff, #00c8ff);
-    color: #222;
-}
+    font-size: 16px; 
+    font-family: 'Roboto Mono', monospace; 
+    transition: background-color 0.3s, transform 0.3s; 
+  }
+  
+  #botonSubir:hover {
+    background-color: #004cff; /* Cambia el color de fondo en hover */
+    transform: translateY(-2px); /* Mueve el botón hacia arriba en hover */
+  }
 
 .home-button {
     background-color: #000000;
