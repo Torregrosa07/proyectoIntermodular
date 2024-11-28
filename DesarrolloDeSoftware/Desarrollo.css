@@ -175,6 +175,25 @@ img {
     background-color: #000000;
 }
 
+/* Estilo para el contenedor de metodologías */
+.metodologias-columnas {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las dos columnas */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Estilo para cada columna */
+.metodologias-columnas .columna {
+    flex: 1; /* Cada columna ocupa el 50% del espacio */
+    padding: 20px; /* Relleno dentro de cada columna */
+    box-sizing: border-box; /* Asegura que el relleno no se agregue al tamaño total */
+}
+
+/* Ajustar el tamaño de las imágenes en las columnas */
+.metodologias-columnas .columna img {
+    max-width: 100%;
+    height: auto; /* Hace que la altura se ajuste proporcionalmente */
+}
 
 #botonSubir:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
