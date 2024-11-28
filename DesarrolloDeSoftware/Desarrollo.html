@@ -305,47 +305,7 @@
     </div>
     <button id="botonSubir" style="display:none;">Arriba</button>
     <script src="./Desarrollo.js"></script>
-</body>
 
-<!-- boton para subir -->
-<button id="botonSubir">Subir</button>
-</main>
-
-<script src="./desarrollo.js"></script>
-
-<script>
-    // Código JS para desplazamiento suave
-    document.addEventListener('DOMContentLoaded', function () {
-        const navItems = document.querySelectorAll('nav ul li a');
-        navItems.forEach(item => {
-            item.addEventListener('click', function (event) {
-                event.preventDefault(); // Evitar el comportamiento por defecto del enlace
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                targetSection.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    });
-
-    // Mostrar el botón cuando se hace scroll
-    var botonSubir = document.getElementById("botonSubir");
-
-    window.onscroll = function () {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            botonSubir.style.display = "block";
-        } else {
-            botonSubir.style.display = "none";
-        }
-    };
-
-    // Subir al hacer clic
-    botonSubir.onclick = function () {
-        document.body.scrollTop = 0; // Para Safari
-        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
-    };
-</script>
 </body>
 
 </html>

@@ -120,7 +120,7 @@ section {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
-/* Estilos para los artículos dentro de las secciones */
+/* Estilos para la información dentro de las secciones */
 .informacion {
     padding: 20px;
     /* El padding se mueve al div .articulo */
@@ -157,7 +157,13 @@ img {
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
+    transition: background 0.3s, color 0.3s;
 }
+#botonSubir:hover {
+    background: linear-gradient(to right, #004cff, #00c8ff);
+    color: #222;
+}
+
 .home-button {
     background-color: #000000;
     color: #0ff;
@@ -167,7 +173,7 @@ img {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', 'monospace';
     transition: background-color 0.3s;
 }
 
@@ -175,11 +181,6 @@ img {
     background-color: #000000;
 }
 
-
-#botonSubir:hover {
-    background: linear-gradient(to right, #004cff, #00c8ff);
-    color: #222;
-}
 
 /* Media query para pantallas pequeñas (opcional) */
 @media(max-width: 450px) {
