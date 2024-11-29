@@ -5,6 +5,7 @@ body {
     line-height: 1.6;
     margin: 0px;
     padding: 175px;
+    padding-top: 10px;
     /* Reducido para dar más espacio al contenido */
     background: #000000;
     color: #eee;
@@ -83,6 +84,7 @@ h1 {
     }
 }
 
+
 /* Estilos para la navegación */
 nav ul {
     list-style: none;
@@ -120,7 +122,7 @@ section {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
-/* Estilos para los artículos dentro de las secciones */
+/* Estilos para la información dentro de las secciones */
 .informacion {
     padding: 20px;
     /* El padding se mueve al div .articulo */
@@ -143,21 +145,20 @@ img {
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
-/* Estilos para el botón de "subir" */
-#botonSubir {
-    display: none;
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
-    background-color: #000000;
-    color: #0ff;
-    text-shadow: 0 0 10px #0ff;
-    padding: 10px 15px;
+button {
+    font-family: 'Roboto Mono', 'monospace';
+    font-size: 16px;
+    color: #fff;
+    background: #0ff;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
+    text-shadow: 0 0 5px #0ff;
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+/* Botón para ir al inicio */
 .home-button {
     background-color: #000000;
     color: #0ff;
@@ -175,10 +176,64 @@ img {
     background-color: #000000;
 }
 
+/* Estilos para el botón flotante de subir */
+#botonSubir {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: #000000;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s, color 0.3s;
+}
 
 #botonSubir:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
+
+}
+
+.metodologias-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.metodologias-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metodologias-container h3 {
+    text-align: center;
+}
+
+.metodologias-container img {
+    margin-top: 10px;
+}
+
+.metodologias-container ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.metodologias-agiles, .devops {
+    
+}
+
+.lean-software, .design-thinking {
+    
+}
+.devops-img {
+    width: 500px;  /* Aumentamos el ancho de la imagen */
+    height: 900px; /* Reducimos la altura para hacerla más alargada horizontalmente */
 }
 
 /* Media query para pantallas pequeñas (opcional) */
@@ -194,4 +249,30 @@ img {
         padding: 10px;
         /* Reduce el padding en pantallas pequeñas */
     }
+}
+/* Estilo para las dos columnas */
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.columna {
+    width: 48%; /* Asegura que ambas columnas tengan el mismo ancho */
+}
+
+.columna h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.columna ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Ajustes de imagen */
+.columna img {
+    width: 70%; /* La imagen ocupará todo el ancho disponible de su columna */
+    height: auto;
 }

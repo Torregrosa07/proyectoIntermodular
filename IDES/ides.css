@@ -5,7 +5,8 @@ body {
     font-family: 'Roboto Mono', monospace;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 175px;
+    padding-top: 10px;
     background-color: #000000;
     color: #eee;
     /* Fondo oscuro y texto claro */
@@ -17,8 +18,7 @@ h1 {
     padding: 20px;
     background: #00c8ff;
     color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-shadow: 0 0 10px #0ff;
 }
 
@@ -136,7 +136,7 @@ img {
 
 /* Asegurarse que los botones en las secciones (como en la barra de navegación) tengan un estilo consistente */
 button {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', 'monospace';
     font-size: 16px;
     color: #fff;
     background: #0ff;

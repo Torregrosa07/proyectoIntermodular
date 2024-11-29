@@ -66,73 +66,9 @@
                     <p id="parrafo5">4- Si no lo hemos abierto al final, iremos al menú de inicio y buscaremos "Visual
                         Studio Code" o hacer clic en el acceso directo del escritorio para abrirlo.</p>
                     <p id="parrafo6">5- En cuanto a la configuración, podemos cambiar el idioma, instalar extensiones
-                        para diferentes lenguajes de programación y personalizar nuestro entorno.</p>
-
-                    <h3>Como instalar VSCode para Linux</h3>
-                    <p>Para instalar VSCode en Linux debemos identificar la distribución que estemos usando ya que el
-                        proceso cambia un poco, en este caso para las que son basadas en Debian y Ubuntu y lo haremos
-                        utilizando el repositorio de Microsoft.</p>
-
-                    <p id="parrafo1">1- Abriremos una terminal y pondremos la clave del repositorio de Microsoft:
-                    <pre>sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'</pre>
+                        para diferentes lenguajes de programación y personalizar nuestro entorno.
                     </p>
 
-                    <p id="parrafo2">2- Actualizaremos la lista de paquetes:</p>
-                    <pre>sudo apt update</pre>
-                    <p id="parrafo3">3- Y finalmente instalaremos Visual Studio Code:</p>
-                    <pre>sudo apt install code</pre>
-
-                    <h3>Instalación en Fedora</h3>
-                    <p>Iremos a la página oficial de Visual Studio Code:
-                        <a href="https://code.visualstudio.com/Download">https://code.visualstudio.com/Download</a> y
-                        seleccionaremos
-                        la versión para Linux, eligiendo el archivo .rpm para Fedora y otras distribuciones basadas en
-                        Red Hat.
-                    </p>
-                    <p>Una vez descargado el archivo .rpm, abrimos una terminal y navegamos a la carpeta donde se
-                        descargó. Usaremos el siguiente comando para instalar el archivo .rpm:</p>
-                    <pre>sudo dnf install code-*.rpm</pre>
-                    <p>Con esto, la instalación de Visual Studio Code estará completa en Fedora.</p>
-
-                    <h3>Instalación en Arch Linux (Manjaro)</h3>
-                    <p>Si estás utilizando Arch Linux o una distribución basada en Arch como Manjaro, se puede instalar
-                        Visual Studio Code fácilmente desde el repositorio AUR (Arch User Repository).</p>
-                    <p>Instalar desde AUR usando un ayudante de AUR:</p>
-                    <pre>yay -S visual-studio-code-bin</pre>
-                    <p>De esta manera se descargará e instalará la versión más reciente de Visual Studio Code.</p>
-
-                    <h3>Instalación mediante Snap (para cualquier distribución de Linux)</h3>
-                    <p>Snap es un sistema de paquetes universal para Linux que facilita la instalación de aplicaciones
-                        en cualquier distribución. Si prefieres usar Snap, puedes instalar VS Code con un solo comando:
-                    </p>
-                    <pre>sudo snap install --classic code</pre>
-
-                    <h3>Instalación mediante Flatpak (para cualquier distribución de Linux)</h3>
-                    <p>Flatpak es otra opción para instalar aplicaciones en múltiples distribuciones de Linux. Para
-                        instalar VS Code con Flatpak, usa el siguiente comando:</p>
-                    <pre>flatpak install flathub com.visualstudio.code</pre>
-                    <p>Para ejecutar VS Code con Flatpak, usa:</p>
-                    <pre>flatpak run com.visualstudio.code</pre>
-
-                    <h3>Verificación de la instalación</h3>
-                    <p>Para asegurarnos de que Visual Studio Code se instaló correctamente, abrimos una terminal y
-                        escribimos el comando:</p>
-                    <pre>code</pre>
-                    <p>Esto debería abrir Visual Studio Code.</p>
-
-                    <h3>Instalación de Visual Studio Code en MacOS</h3>
-                    <p>1. Dirígete al sitio web oficial de Visual Studio Code:
-                        <a href="https://code.visualstudio.com">https://code.visualstudio.com</a> y haz clic en el botón
-                        "Download for Mac". Esto descargará el archivo .zip de la última versión estable.
-                    </p>
-                    <p>2. Una vez descargado el archivo .zip, lo descomprimimos.</p>
-                    <p>3. Arrastra y suelta el archivo "Visual Studio Code.app" en la carpeta Aplicaciones de la Mac.
-                    </p>
-                    <p>4. Abre la carpeta Aplicaciones y haz doble clic en "Visual Studio Code.app" para abrirlo.</p>
-                    <p>5. Si es la primera vez que abres una aplicación descargada de Internet, macOS podría pedir
-                        confirmación para abrirla.</p>
-                    <p>6. Para configurar Visual Studio Code, instala extensiones y personaliza la interfaz según tus
-                        necesidades.</p>
                 </div>
             </div>
         </section>
@@ -161,17 +97,6 @@
                 <p>Una vez descargado, ejecuta el archivo y sigue las instrucciones del asistente de instalación.
                     NetBeans se instalará en la ubicación que elijas y podrás empezar a usarlo inmediatamente.</p>
 
-                <h3>Para Linux</h3>
-                <p>En Linux, se puede instalar desde la terminal usando los repositorios oficiales de distribución o
-                    descargando el archivo .tar.gz desde la página oficial. Para las distribuciones basadas en Debian,
-                    como Ubuntu, puedes usar el siguiente comando:</p>
-                <pre>sudo apt-get install netbeans</pre>
-                <p>O descargar el archivo comprimido y descomprimirlo:</p>
-                <pre>tar -xvzf netbeans.tar.gz</pre>
-
-                <h3>Para macOS</h3>
-                <p>En Mac, basta con descargar el archivo .dmg desde la página oficial y arrastrar la aplicación a la
-                    carpeta de Aplicaciones.</p>
             </div>
 
         </section>
@@ -189,16 +114,9 @@
                 <h2>Instalación de IntelliJ IDEA</h2>
                 <h3>Para Windows</h3>
                 <p>Para instalar IntelliJ IDEA en Windows, visita la página oficial de JetBrains e instala el archivo
-                    .exe. El asistente de instalación te guiará a través del proceso.</p>
+                    .exe. El asistente de instalación te guiará a través del proceso.
+                </p>
 
-                <h3>Para Linux</h3>
-                <p>En Linux, puedes instalar IntelliJ IDEA utilizando el archivo .tar.gz desde el sitio web de JetBrains
-                    o utilizando la terminal si tu distribución soporta snap:</p>
-                <pre>sudo snap install intellij-idea-community --classic</pre>
-
-                <h3>Para macOS</h3>
-                <p>En macOS, puedes descargar el archivo .dmg desde la página de JetBrains y arrastrar la aplicación a
-                    la carpeta de aplicaciones.</p>
             </div>
         </section>
 
@@ -216,18 +134,9 @@
                 <h3>Para Windows</h3>
                 <p>Descarga el instalador de Eclipse desde su página oficial y sigue las instrucciones para completar la
                     instalación.</p>
-
-                <h3>Para Linux</h3>
-                <p>En Linux, Eclipse se puede instalar desde el repositorio de tu distribución. Por ejemplo, en
-                    distribuciones basadas en Debian o Ubuntu, puedes usar el siguiente comando:</p>
-                <pre>sudo apt-get install eclipse</pre>
-
-                <h3>Para macOS</h3>
-                <p>En macOS, descarga el archivo .dmg desde la página oficial de Eclipse y arrastra la aplicación a la
-                    carpeta de Aplicaciones.</p>
             </div>
            
-            <button id="botonSubir" style="display:none;">Subir</button>
+            <button id="botonSubir" style="display:none;">Ir arriba</button>
             <script src="./ides.js"></script>
 
         </section>
