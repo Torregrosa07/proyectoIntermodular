@@ -71,8 +71,9 @@
                     <article>
                         <h3>Código Fuente</h3>
                         <div class="contenido-codigo">
-                        <p>El código fuente es el conjunto de instrucciones escritas en un lenguaje de programación que
-                            un programador crea para que una computadora pueda entender y ejecutar una tarea específica.
+                        <p>El código fuente es el conjunto de instrucciones que los programadores escriben en un lenguaje
+                           de programación para hacer que un programa o aplicación funcione. Es como el "guion" que le dice
+                           a la computadora qué hacer. Este código se puede modificar y mejorar para que el programa haga lo que necesitamos.
                         </p>
                         <img src="codigofuente.jpg" width="250" height="250">
                         </div>
@@ -80,10 +81,11 @@
                     <article>
                         <h3>Código Objeto</h3>
                         <div class="contenido-codigo-objeto">
-                        <p>El código objeto es el código que resulta de la compilación del código fuente. Durante la
-                            compilación, el compilador traduce el código fuente (escrito en un lenguaje de alto nivel) a
-                            un lenguaje de bajo nivel, generalmente lenguaje de máquina o lenguaje intermedio, que puede
-                            ser entendido por la máquina, pero no es directamente ejecutable aún.</p>
+                        <p>Es el resultado de convertir el código fuente, que es escrito por los programadores, a un formato que la computadora
+                            puede entender, pero aún no es completamente ejecutable. Es un archivo intermedio que contiene instrucciones en un
+                            lenguaje de bajo nivel, generalmente en código binario, pero necesita pasar por un proceso de enlace (linking) para
+                            unirse con otros archivos de código objeto y formar el programa final. Una vez que el código objeto se enlaza
+                            correctamente, se convierte en un archivo ejecutable que la computadora puede correr sin problemas.</p>
                             <img src="codigoobjeto.jpg" width="250" height="250">
                         </div>
                     </article>
@@ -91,10 +93,11 @@
                     <article>
                         <h3>Código Ejecutable</h3>
                         <div class="contenido-codigo-ejecutable">
-                        <p>El código ejecutable es el archivo final que puede ser ejecutado directamente por la
-                            computadora. Es el código objeto que ha sido procesado por un enlazador (linker), que lo
-                            combina con bibliotecas necesarias y otros archivos de código objeto para generar un archivo
-                            independiente que puede correr en un sistema operativo determinado.</p>
+                        <p>es el archivo final que la computadora puede ejecutar directamente. Es el resultado de compilar y vincular todo el código 
+                        fuente y el código objeto. Este tipo de archivo ya está en un formato que el sistema operativo y la máquina pueden entender
+                        y ejecutar sin necesidad de ningún programa intermedio. Los archivos ejecutables suelen tener extensiones como .exe en 
+                        Windows o .out en sistemas Unix/Linux. Cuando abres un archivo ejecutable, el programa comienza a funcionar, siguiendo 
+                        las instrucciones que se definieron en el código fuente original.</p>
                             <img src="codigoejecutable.jpg" width="200" height="250">
                         </div>
                     </article>
@@ -142,22 +145,24 @@
             <section id="proceso-obtencion-codigo">
                 <div class="informacion">
                     <h2>Proceso de Obtención de Código Ejecutable a partir de Código Fuente</h2>
+                    <div class="proceso-contenedor">
                     <p>El proceso de obtención de código ejecutable a partir de código fuente es el conjunto de pasos
                         que se siguen para transformar un programa escrito en un lenguaje de programación de alto nivel
                         (como C, Java o Python) en un archivo que la computadora pueda ejecutar directamente. Este
                         proceso se lleva a cabo mediante el uso de diversas herramientas.</p>
-                    <p>Entre las herramientas implicadas en este proceso se encuentran:</p>
-                    <img  src="procesoobtencioncodigoejecutable.jpg" width="250" height="250">
-                    <ul>
-                        <li>Editores de texto/IDEs (como Visual Studio Code, Eclipse, o PyCharm).</li>
-                        <li>Compiladores (como GCC para C/C++).</li>
-                        <li>Intérpretes (como Python o Node.js para JavaScript).</li>
-                        <li>Enlazadores (linkers) y depuradores (como GDB).</li>
-                    </ul>
-                    <p>El proceso de obtención de un código ejecutable implica desde la redacción del código hasta la
-                        generación de un archivo que la computadora puede ejecutar, utilizando herramientas como
-                        compiladores, intérpretes y enlazadores.</p>
-                </div>
+                        <p>Entre las herramientas implicadas en este proceso se encuentran:</p>
+                        <ul>
+                            <li>Editores de texto/IDEs (como Visual Studio Code, Eclipse, o PyCharm).</li>
+                            <li>Compiladores (como GCC para C/C++).</li>
+                            <li>Intérpretes (como Python o Node.js para JavaScript).</li>
+                            <li>Enlazadores (linkers) y depuradores (como GDB).</li>
+                        </ul>
+                        <p>El proceso de obtención de un código ejecutable implica desde la redacción del código hasta la
+                            generación de un archivo que la computadora puede ejecutar, utilizando herramientas como
+                            compiladores, intérpretes y enlazadores.</p>
+                            <img  src="procesoobtencioncodigoejecutable.jpg" width="250" height="250">
+                    </div>
+                
             </section>
 
             <section id="maquinas-virtuales">
@@ -226,8 +231,13 @@
             <section id="desarrollo-aplicaciones">
                 <div class="informacion">
                     <h2>Fases del desarrollo de una aplicación informática</h2>
+                    <p>son las distintas etapas del proceso mediante las cuales se planifica, diseña, desarrolla, prueba, implementa y 
+                    mantiene un software. Estas fases aseguran que el desarrollo se realice de manera estructurada y controlada, permitiendo
+                    la entrega de un producto de calidad que cumpla con las expectativas y necesidades del cliente.</p>
                     <img src="fasesdeldesarrolloinformatica.jpg" width="250" height="250">
-                    <article>
+
+                    <div class="columnas">
+                    <article class="columna">
                         <h3>Análisis de Requisitos</h3>
                         <p>Esta fase inicial es crucial para el éxito del proyecto. Su cometido es:</p>
                         <ul>
@@ -235,9 +245,11 @@
                             <li>Definir los objetivos y alcance del proyecto</li>
                             <li>Recopilar y documentar los requisitos funcionales y no funcionales</li>
                             <li>Establecer las restricciones y limitaciones del sistema</li>
+                            <img src="AnálisisRequisitos.jpg" width="250" height="250">
                         </ul>
                     </article>
-                    <article>
+
+                    <article class="columna">
                         <h3>Diseño</h3>
                         <img src="diseñoinformatica.jpg" width="250" height="250">
                         <p>Una vez definidos los requisitos, se procede al diseño. Esta fase tiene como cometido:</p>
@@ -249,6 +261,7 @@
                         </ul>
                     </article>
                 </div>
+            </div>
             </section>
 
             <section id="modelos-ciclo-vida">
@@ -302,8 +315,10 @@
                    
                      <div class="lean-software">
                     <h3>3. Lean Software Development</h3>
-                    <p>Se centra en la eliminación de desperdicios y la optimización del flujo de valor, inspirada en
-                        los principios de manufactura Lean de Toyota.</p>
+                    <p> es una metodología que busca hacer el desarrollo de software más eficiente. Se enfoca en eliminar lo que no
+                         aporta valor, como tareas innecesarias, y en entregar el producto lo más rápido posible. Promueve la mejora continua,
+                          el trabajo en equipo y la toma de decisiones basadas en datos. La idea es crear software de calidad de
+                          forma ágil, maximizando el valor para el cliente.</p>
                         <img src="LeanSoftwareDevelopment.jpg" width="370" height="250">
                      </div>
 
