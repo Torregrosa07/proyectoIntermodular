@@ -2,11 +2,11 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
-
     background-color: #000000;
     color: #eee;
     margin: 0;
     padding: 175px;
+    padding-top: 10px;
 }
 
 /* Estilos para el contenedor principal */
@@ -18,6 +18,8 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-flow:column
 }
 
 /* Estilos para los títulos */
@@ -58,6 +60,9 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
+
+
+/*Boton de enviar formulario*/
 /* Estilos para el botón de enviar (opcional) */
 button[type="submit"] {
     background-color: #0ff;
@@ -164,4 +169,28 @@ tr:hover {
 #botonSubir:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
+}
+#imagenClick {
+    width: 480px;
+    cursor: pointer;
+}
+
+#puntos {
+    font-weight: bold;
+    font-size: 3rem;
+    color:white;
+}
+
+#tiempoRestante {
+    font-size: 3rem;
+    margin-top: 8px;
+    color:white;
+}
+
+#botonReset {
+    color:rgb(0, 0, 0);
+    font-size: x-large;
+    background: linear-gradient( #9c9c9c, #c0bcbc );
+    border-radius: 30px;
+    padding: 20px 30px;
 }
