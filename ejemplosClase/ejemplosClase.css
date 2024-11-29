@@ -10,7 +10,7 @@ body {
 }
 
 /* Estilos para el contenedor principal */
-.container {
+.contenedor {
     width: 80%;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.1);
@@ -42,12 +42,12 @@ p {
 }
 
 /* Estilos para las preguntas */
-.question {
+.pregunta {
     margin-bottom: 20px;
 }
 
 /* Estilos para las opciones de respuesta */
-.options label {
+.opciones label {
     display: block;
     margin-bottom: 10px;
     cursor: pointer;
