@@ -7,26 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo de Software</title>
     <link rel="stylesheet" href="./desarrollo.css">
-    <style>
-        /* Estilo para el botón de subir */
-        #botonSubir {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            display: none; /* Inicialmente oculto */
-        }
-
-        #botonSubir:hover {
-            background-color: #0056b3;
-        }
-    </style>
 
 <body>
     <nav>
@@ -147,16 +127,23 @@
                     <h2>Proceso de Obtención de Código Ejecutable a partir de Código Fuente</h2>
                     <div class="proceso-contenedor">
                         <img  src="procesoobtencioncodigoejecutable.jpg" width="250" height="250" class="imagen-derecha">
-                    <p>El proceso de obtención de código ejecutable a partir de código fuente es el conjunto de pasos
-                        que se siguen para transformar un programa escrito en un lenguaje de programación de alto nivel
-                        (como C, Java o Python) en un archivo que la computadora pueda ejecutar directamente. Este
-                        proceso se lleva a cabo mediante el uso de diversas herramientas.</p>
+                    <p>El proceso de obtención de código ejecutable a partir de código fuente es una secuencia de pasos crucial 
+                    para transformar un programa escrito en un lenguaje de programación de alto nivel (como C, Java, Python) en
+                    un archivo ejecutable que la computadora pueda ejecutar directamente. Este proceso implica varias etapas y el
+                    uso de herramientas específicas que convierten el código legible por los humanos en un formato que el hardware 
+                    de la computadora puede interpretar.</p>
                         <p>Entre las herramientas implicadas en este proceso se encuentran:</p>
                         <ul>
-                            <li>Editores de texto/IDEs (como Visual Studio Code, Eclipse, o PyCharm).</li>
-                            <li>Compiladores (como GCC para C/C++).</li>
-                            <li>Intérpretes (como Python o Node.js para JavaScript).</li>
-                            <li>Enlazadores (linkers) y depuradores (como GDB).</li>
+                            <p><span style="color:rgb(126, 202, 186);">Escritura del Código Fuente:</span> El programador escribe el código utilizando 
+                            un editor de texto o un IDE.</p>
+                            <p><span style="color:rgb(126, 202, 186);">Compilación:</span> El compilador convierte el código fuente en código objeto,
+                             verificando errores de sintaxis y transformando las instrucciones en un formato de bajo nivel.</p>
+                            <p><span style="color:rgb(126, 202, 186);">Enlazado (Linking):</span> El enlazador combina el código objeto con las bibliotecas
+                             necesarias para generar el archivo ejecutable final.</p>
+                             <p><span style="color:rgb(126, 202, 186);">Generación del Archivo Ejecutable:</span> El resultado es un archivo que la computadora
+                             puede ejecutar, como un archivo .exe o .out.</p>
+                             <p><span style="color:rgb(126, 202, 186);">Depuración y Optimización:</span> El uso de herramientas como depuradores (e.g., GDB) 
+                            y optimizadores mejora la eficiencia y corrige posibles errores en el programa.</p> 
                         </ul>
                         <p>El proceso de obtención de un código ejecutable implica desde la redacción del código hasta la
                             generación de un archivo que la computadora puede ejecutar, utilizando herramientas como
@@ -336,7 +323,7 @@
         </div>
     </section>
     </div>
-    <button id="botonSubir" style="display:none;">Arriba</button>
+    <button id="botonSubir" style="display:none;">Ir arriba</button>
     <script src="./Desarrollo.js"></script>
 
 </body>

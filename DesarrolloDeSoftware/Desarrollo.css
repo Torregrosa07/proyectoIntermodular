@@ -5,6 +5,7 @@ body {
     line-height: 1.6;
     margin: 0px;
     padding: 175px;
+    padding-top: 10px;
     /* Reducido para dar más espacio al contenido */
     background: #000000;
     color: #eee;
@@ -157,13 +158,25 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Hover de los botones */
-button:hover {
-    background-color: #004cff;
-    transform: translateY(-2px);
+/* Botón para ir al inicio */
+.home-button {
+    background-color: #000000;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    transition: background-color 0.3s;
 }
 
-/* Estilos para el botón de "subir" */
+.home-button:hover {
+    background-color: #000000;
+}
+
+/* Estilos para el botón flotante de subir */
 #botonSubir {
     display: none;
     position: fixed;
@@ -183,24 +196,7 @@ button:hover {
 #botonSubir:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
-}
 
-.home-button {
-    background-color: #000000;
-    color: #0ff;
-    text-shadow: 0 0 10px #0ff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Roboto Mono', monospace;
-    transition: background-color 0.3s;
-}
-
-
-.home-button:hover {
-    background-color: #000000;
 }
 
 .metodologias-container {
