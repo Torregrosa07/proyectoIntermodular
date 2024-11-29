@@ -38,13 +38,13 @@ botonSubir.onclick = function () {
     document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera   
 
 };
-  // Verificar si el botón "Ir al Inicio" existe en la página
-  var botonHome = document.getElementById("homeButton");
+// Verificar si el botón "Ir al Inicio" existe en la página
+var botonHome = document.getElementById("homeButton");
 
-  if (botonHome) {
-      botonHome.addEventListener('click', function () {
-          // Redirigir a la página principal
-          window.location.href = "../index.html";
-      });
-  }
+if (botonHome) {
+    botonHome.addEventListener('click', function () {
+        // Redirigir a la página principal
+        window.location.href = "../index.html";
+    });
+}
 
