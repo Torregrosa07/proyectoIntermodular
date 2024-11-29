@@ -198,6 +198,7 @@ button:hover {
     transition: background-color 0.3s;
 }
 
+
 .home-button:hover {
     background-color: #000000;
 }
@@ -279,3 +280,13 @@ button:hover {
     width: 70%; /* La imagen ocupará todo el ancho disponible de su columna */
     height: auto;
 }
+
+.imagen-derecha {
+    float: right;
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 10px; /* Espacio en la parte inferior si el texto es más largo que la imagen */
+}
+
+
+
+
