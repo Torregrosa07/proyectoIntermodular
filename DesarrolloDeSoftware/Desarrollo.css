@@ -85,34 +85,54 @@ h1 {
 }
 
 
-/* Estilos para la navegación */
+/* Estilos generales para el menú */
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-nav li {
-    display: inline-block;
     margin: 0;
-    font-size: 13px;
-}
-
-nav a {
+    padding: 0;
+    background-color: #333; /* Color de fondo del menú */
+  }
+  
+  nav li {
+    display: inline-block; /* Para que los elementos del menú principal se muestren en línea */
+    position: relative; /* Para posicionar los submenús */
+  }
+  
+  nav a {
     display: block;
-    text-decoration: none;
-    color: #eee;
     padding: 15px 20px;
-    transition: background 0.3s, color 0.3s;
-}
-
-nav a:hover {
-    background: linear-gradient(to right, #004cff, #00c8ff);
-    color: #222;
-}
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none;
+  }
+  
+  /* Estilos para los submenús */
+  nav li ul {
+    display: none; /* Ocultar los submenús inicialmente */
+    position: absolute; 
+    background-color: #444; /* Color de fondo de los submenús */
+    min-width: 200px; /* Ancho mínimo de los submenús */
+    z-index: 1; /* Para que los submenús se muestren encima del contenido */
+  }
+  
+  /* Mostrar los submenús al pasar el ratón por encima */
+  nav li:hover ul {
+    display: block;
+  }
+  
+  /* Estilos para los elementos de los submenús */
+  nav li ul li {
+    display: block; /* Para que los elementos del submenú se muestren en bloque */
+  }
+  
+  nav li ul li a {
+    padding: 10px;
+    border-bottom: 1px solid #555; /* Separador entre elementos del submenú */
+  }
+  
+  /* Estilos para el último elemento del submenú */
+  nav li ul li:last-child a {
+    border-bottom: none;
+  }
 
 /* Estilos para las secciones */
 section {
