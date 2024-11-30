@@ -94,6 +94,14 @@ img {
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Sombra con efecto neón */
 }
 
+a {
+    color: #0ff; /* Cambia el color del enlace a un tono naranja */
+}
+
+a:hover {
+    color: #ffffff; /* Cambia el color cuando el usuario pasa el ratón por encima */
+}
+
 /* Botón para ir al inicio */
 .home-button {
     background-color: #000000;
