@@ -18,30 +18,40 @@ h3 {
     color: #0ff;
     text-shadow: 0 0 10px #0ff;
 }
+
 .contenido-codigo {
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
 }
 
 .contenido-codigo img {
-    margin-left: 20px; /* Espacio entre el texto y la imagen */
+    margin-left: 20px;
+    /* Espacio entre el texto y la imagen */
 }
+
 .contenido-codigo-objeto {
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
 }
+
 .contenido-codigo-ejecutable {
     display: flex;
-    align-items: center; /* Alinea verticalmente la imagen con el texto */
-    justify-content: space-between; /* Se asegura de que haya espacio entre el texto y la imagen */
+    align-items: center;
+    /* Alinea verticalmente la imagen con el texto */
+    justify-content: space-between;
+    /* Se asegura de que haya espacio entre el texto y la imagen */
 }
 
 .contenido-codigo-ejecutable img {
-    margin-left: 20px; /* Espacio entre el texto y la imagen */
+    margin-left: 20px;
+    /* Espacio entre el texto y la imagen */
 }
 
 .contenido-codigo-objeto img {
-    margin-left: 20px; /* Espacio entre el texto y la imagen */
+    margin-left: 20px;
+    /* Espacio entre el texto y la imagen */
 }
 
 /* Estilos para el titulo */
@@ -52,11 +62,15 @@ h1 {
     background-clip: text;
     color: transparent;
 }
+
 .contenido-lenguajes {
     display: flex;
-    align-items: center; /* Alinea la imagen y el texto verticalmente */
-    justify-content: flex-start; /* Alinea los elementos de izquierda a derecha */
-    gap: 20px; /* Espacio entre la imagen y el texto */
+    align-items: center;
+    /* Alinea la imagen y el texto verticalmente */
+    justify-content: flex-start;
+    /* Alinea los elementos de izquierda a derecha */
+    gap: 20px;
+    /* Espacio entre la imagen y el texto */
 }
 
 .contenido-lenguajes img {
@@ -65,74 +79,94 @@ h1 {
 }
 
 .texto-lenguajes {
-    flex: 1; /* Hace que el texto ocupe el resto del espacio disponible */
+    flex: 1;
+    /* Hace que el texto ocupe el resto del espacio disponible */
 }
 
 @media (max-width: 768px) {
     .contenido-lenguajes {
-        flex-direction: column; /* Cambia el diseño a vertical cuando la pantalla sea pequeña */
-        align-items: center; /* Centra los elementos en la pantalla */
+        flex-direction: column;
+        /* Cambia el diseño a vertical cuando la pantalla sea pequeña */
+        align-items: center;
+        /* Centra los elementos en la pantalla */
     }
 
     .contenido-lenguajes img {
-        width: 200px; /* Reduce el tamaño de la imagen en pantallas pequeñas */
+        width: 200px;
+        /* Reduce el tamaño de la imagen en pantallas pequeñas */
         height: 200px;
     }
 
     .texto-lenguajes {
-        text-align: center; /* Centra el texto en pantallas pequeñas */
+        text-align: center;
+        /* Centra el texto en pantallas pequeñas */
     }
 }
 
 
-/* Estilos generales para el menú */
+/* Estilos para el menú */
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #333; /* Color de fondo del menú */
-  }
-  
-  nav li {
-    display: inline-block; /* Para que los elementos del menú principal se muestren en línea */
-    position: relative; /* Para posicionar los submenús */
-  }
-  
-  nav a {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
     display: block;
-    padding: 15px 20px;
-    color: white; /* Color del texto de los enlaces */
     text-decoration: none;
-  }
-  
-  /* Estilos para los submenús */
-  nav li ul {
-    display: none; /* Ocultar los submenús inicialmente */
-    position: absolute; 
-    background-color: #444; /* Color de fondo de los submenús */
-    min-width: 200px; /* Ancho mínimo de los submenús */
-    z-index: 1; /* Para que los submenús se muestren encima del contenido */
-  }
-  
-  /* Mostrar los submenús al pasar el ratón por encima */
-  nav li:hover ul {
+    color: #eee;
+    padding: 15px 20px;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Estilos para los submenús */
+
+nav li ul {
+    /* Selecciona las listas <ul> que son submenús (dentro de un <li>) */
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 200px;
+    z-index: 1;
+    /* Asegura que el submenú se muestre encima de otros elementos */
+}
+
+
+nav li:hover ul {
+
     display: block;
-  }
-  
-  /* Estilos para los elementos de los submenús */
-  nav li ul li {
-    display: block; /* Para que los elementos del submenú se muestren en bloque */
-  }
-  
-  nav li ul li a {
+
+}
+
+nav li ul li a {
+    /* Selecciona los enlaces <a> dentro de los submenús */
     padding: 10px;
-    border-bottom: 1px solid #555; /* Separador entre elementos del submenú */
-  }
-  
-  /* Estilos para el último elemento del submenú */
-  nav li ul li:last-child a {
+    border-bottom: 1px solid #555;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav li ul li a:hover {
+    background: linear-gradient(to right, #004cff, #00c8ff);
+    color: #222;
+   
+}
+
+/* Estilos para el último elemento del submenú */
+
+nav li ul li:last-child a {
+    /* Selecciona el último enlace <a> de cada submenú */
     border-bottom: none;
-  }
+    /* Elimina la línea divisoria del último enlace */
+}
 
 /* Estilos para las secciones */
 section {
@@ -221,8 +255,10 @@ button {
 
 .metodologias-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 20px; /* Espacio entre columnas */
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas */
+    gap: 20px;
+    /* Espacio entre columnas */
 }
 
 .metodologias-container div {
@@ -244,16 +280,17 @@ button {
     text-align: left;
 }
 
-.metodologias-agiles, .devops {
-    
-}
+.metodologias-agiles,
+.devops {}
 
-.lean-software, .design-thinking {
-    
-}
+.lean-software,
+.design-thinking {}
+
 .devops-img {
-    width: 500px;  /* Aumentamos el ancho de la imagen */
-    height: 900px; /* Reducimos la altura para hacerla más alargada horizontalmente */
+    width: 500px;
+    /* Aumentamos el ancho de la imagen */
+    height: 900px;
+    /* Reducimos la altura para hacerla más alargada horizontalmente */
 }
 
 /* Media query para pantallas pequeñas (opcional) */
@@ -270,15 +307,18 @@ button {
         /* Reduce el padding en pantallas pequeñas */
     }
 }
+
 /* Estilo para las dos columnas */
 .columnas {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Espacio entre las columnas */
+    gap: 20px;
+    /* Espacio entre las columnas */
 }
 
 .columna {
-    width: 48%; /* Asegura que ambas columnas tengan el mismo ancho */
+    width: 48%;
+    /* Asegura que ambas columnas tengan el mismo ancho */
 }
 
 .columna h3 {
@@ -293,16 +333,15 @@ button {
 
 /* Ajustes de imagen */
 .columna img {
-    width: 70%; /* La imagen ocupará todo el ancho disponible de su columna */
+    width: 70%;
+    /* La imagen ocupará todo el ancho disponible de su columna */
     height: auto;
 }
 
 .imagen-derecha {
     float: right;
-    margin-left: 20px; /* Espacio entre la imagen y el texto */
-    margin-bottom: 10px; /* Espacio en la parte inferior si el texto es más largo que la imagen */
+    margin-left: 20px;
+    /* Espacio entre la imagen y el texto */
+    margin-bottom: 10px;
+    /* Espacio en la parte inferior si el texto es más largo que la imagen */
 }
-
-
-
-
