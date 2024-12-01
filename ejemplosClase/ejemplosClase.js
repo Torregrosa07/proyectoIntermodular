@@ -25,11 +25,12 @@ botonSubir.onclick = function () {
     document.body.scrollTop = 0; // Para Safari
     document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
 };
+
+
 //Js para el juego clicker
 var contador = 0;
 var tiempo = 10;
 var temporizador;
-
 function incrementarContador() {
 
     if (tiempo > 0) {
