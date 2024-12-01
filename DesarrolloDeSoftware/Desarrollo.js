@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
 // Obtener el botón
 var botonSubir = document.getElementById("botonSubir");
 
