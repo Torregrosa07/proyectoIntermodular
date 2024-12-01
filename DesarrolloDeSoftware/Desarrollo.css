@@ -227,7 +227,8 @@ button {
 }
 
 .home-button:hover {
-    background-color: #000000;
+    background:linear-gradient(to right, #004cff, #00c8ff);
+    color: #222;
 }
 
 /* Estilos para el botón flotante de subir */
