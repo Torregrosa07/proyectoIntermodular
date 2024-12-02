@@ -33,6 +33,9 @@ function checkAnswers() {
         q1: "c", // Respuesta correcta para la pregunta 1
         q2: "a", // Respuesta correcta para la pregunta 2
         q3: "b"  // Respuesta correcta para la pregunta 3
+        q4: "b"  // Respuesta correcta para la pregunta 3
+        q5: "b"  // Respuesta correcta para la pregunta 3
+        q6: "b"  // Respuesta correcta para la pregunta 3
     };
 
     // Obtener el formulario y el contenedor de resultados
