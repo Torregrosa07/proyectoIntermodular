@@ -27,55 +27,40 @@ botonSubir.onclick = function () {
 };
 
 
-//Js para el juego clicker
-var contador = 0;
-var tiempo = 10;
-var temporizador;
-function incrementarContador() {
+function checkAnswers() {
+    // Respuestas correctas
+    const correctAnswers = {
+        q1: "c", // Respuesta correcta para la pregunta 1
+        q2: "a", // Respuesta correcta para la pregunta 2
+        q3: "b"  // Respuesta correcta para la pregunta 3
+    };
 
-    if (tiempo > 0) {
+    // Obtener el formulario y el contenedor de resultados
+    const form = document.getElementById("quiz-form");
+    const resultContainer = document.getElementById("result");
+    let score = 0;
 
-        contador++;
+    // Iterar a través de cada pregunta
+    Object.keys(correctAnswers).forEach((questionId) => {
+        const selectedOption = form.querySelector(`input[name="${questionId}"]:checked`);
 
-
-        document.getElementById("puntos").innerHTML = contador;
-
-
-        document.getElementById("botonReset").style.display = "block";
-    }
-}
-
-function iniciarTemporizador() {
-
-    temporizador = setInterval(function () {
-        tiempo--;
-
-
-        document.getElementById("tiempoRestante").innerHTML = "Tiempo restante: " + tiempo + " Segundos";
-
-
-        if (tiempo <= 0) {
-            clearInterval(temporizador);
-            document.getElementById("imagenClick").onclick = null;
+        if (selectedOption) {
+            if (selectedOption.value === correctAnswers[questionId]) {
+                // Respuesta correcta
+                score++;
+                document.querySelector(`input[name="${questionId}"][value="${correctAnswers[questionId]}"]`)
+                    .parentElement.classList.add("correct");
+            } else {
+                // Respuesta incorrecta
+                document.querySelector(`input[name="${questionId}"][value="${selectedOption.value}"]`)
+                    .parentElement.classList.add("incorrect");
+            }
+        } else {
+            // Si no se selecciona ninguna opción
+            document.querySelector(`input[name="${questionId}"]`).parentElement.classList.add("incorrect");
         }
-    }, 1000);
+    });
+
+    // Mostrar el resultado
+    resultContainer.innerHTML = `Tu puntuación es ${score} de ${Object.keys(correctAnswers).length}`;
 }
-
-function resetearContador() {
-
-    contador = 0;
-    tiempo = 10;
-
-
-    document.getElementById("puntos").innerHTML = contador;
-    document.getElementById("botonReset").style.display = "none";
-
-    document.getElementById("imagenClick").onclick = incrementarContador;
-    document.getElementById("tiempoRestante").innerHTML = "Tiempo restante: " + tiempo + " Segundos";
-
-    clearInterval(temporizador);
-    iniciarTemporizador();
-}
-
-
-window.onload = iniciarTemporizador;

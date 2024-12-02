@@ -5,8 +5,7 @@ body {
     background-color: #000000;
     color: #eee;
     margin: 0;
-    padding: 175px;
-    padding-top: 10px;
+    padding: 50px;
 }
 
 /* Botón para ir al inicio */
@@ -24,7 +23,7 @@ body {
 }
 
 .home-button:hover {
-    background:linear-gradient(to right, #004cff, #00c8ff);
+    background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
 }
 
@@ -49,6 +48,7 @@ body {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
 }
+
 /* Estilos para el contenedor principal */
 .contenedor {
     width: 80%;
@@ -59,7 +59,7 @@ body {
     padding: 20px;
     text-align: center;
     display: flex;
-    flex-flow:column
+    flex-flow: column;
 }
 
 /* Estilos para los títulos */
@@ -100,11 +100,8 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
-
-
-/*Boton de enviar formulario*/
-/* Estilos para el botón de enviar (opcional) */
-button[type="submit"] {
+/* Botón de enviar formulario */
+button[type="button"] {
     background-color: #0ff;
     color: #000;
     padding: 10px 20px;
@@ -112,75 +109,61 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
 }
 
-button[type="submit"]:hover {
-    background-color:
-        #00c8ff;
+button[type="button"]:hover {
+    background-color: #00c8ff;
+    color: #222;
 }
 
+/* Estilos para respuestas correctas e incorrectas */
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+/* Estilo para el resultado */
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Estilo para las filas de la tabla de resultados */
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.1);
-    /* Fondo blanco semitransparente */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-    /* Sombra con efecto neón */
 }
 
-th,
-td {
+th, td {
     padding: 15px;
     text-align: left;
     border: 1px solid #0ff;
-    /* Borde con color neón */
 }
 
 th {
     background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo oscuro para el encabezado */
     color: #0ff;
-    /* Texto neón para el encabezado */
     font-weight: bold;
 }
 
 tr:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.2);
-    /* Fondo oscuro para filas pares */
 }
 
 tr:hover {
     background-color: rgba(0, 255, 255, 0.2);
-    /* Fondo neón al pasar el ratón */
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-    /* Sombra neón al pasar el ratón */
-}
-
-#imagenClick {
-    width: 200px;
-    cursor: pointer;
-    align-content: center;
-}
-
-#puntos {
-    font-weight: bold;
-    font-size: 3rem;
-    color:white;
-}
-
-#tiempoRestante {
-    font-size: 3rem;
-    margin-top: 8px;
-    color:white;
-}
-
-#botonReset {
-    color:rgb(0, 0, 0);
-    font-size: x-large;
-    background: linear-gradient( #9c9c9c, #c0bcbc );
-    border-radius: 30px;
-    padding: 20px 30px;
 }
