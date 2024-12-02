@@ -83,21 +83,7 @@ h1 {
     /* Hace que el texto ocupe el resto del espacio disponible */
 }
 
-@media (max-width: 768px) {
-    .contenido-lenguajes {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .contenido-lenguajes img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .texto-lenguajes {
-        text-align: center;
-    }
-}
 
 
 /* Estilos para el menú */
@@ -125,7 +111,7 @@ nav a {
     font-size: 18px;
     transition: background 0.3s, color 0.3s;
     align-items: center;
-    
+
 }
 
 /* Estilos para los submenús */
@@ -150,6 +136,7 @@ nav li:hover ul {
 nav li ul li a {
     /* Selecciona los enlaces <a> dentro de los submenús */
     padding: 10px;
+    border-radius: 10px;
     border-bottom: 1px solid #555;
     transition: background 0.3s, color 0.3s;
 }
@@ -157,7 +144,7 @@ nav li ul li a {
 nav li ul li a:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
-   
+
 }
 
 /* Estilos para el último elemento del submenú */
@@ -227,7 +214,7 @@ button {
 }
 
 .home-button:hover {
-    background:linear-gradient(to right, #004cff, #00c8ff);
+    background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
 }
 
@@ -289,20 +276,6 @@ button {
     /* Reducimos la altura para hacerla más alargada horizontalmente */
 }
 
-/* Media query para pantallas pequeñas (opcional) */
-@media(max-width: 450px) {
-
-    /* Puedes añadir estilos específicos para pantallas pequeñas aquí */
-    nav li {
-        font-size: 11px;
-        /* Ajusta el tamaño de la fuente en el menú */
-    }
-
-    .informacion {
-        padding: 10px;
-        /* Reduce el padding en pantallas pequeñas */
-    }
-}
 
 /* Estilo para las dos columnas */
 .columnas {
@@ -348,31 +321,52 @@ button {
 
 /* Imagen alineada a la izquierda */
 .image-container .image-left {
-    flex: 0 0 auto; /* Evita que las imágenes se redimensionen automáticamente */
-    margin-right: auto; /* Empuja la imagen hacia la izquierda */
+    flex: 0 0 auto;
+    /* Evita que las imágenes se redimensionen automáticamente */
+    margin-right: auto;
+    /* Empuja la imagen hacia la izquierda */
 }
 
 /* Imagen alineada a la derecha */
 .image-container .image-right {
-    flex: 0 0 auto; /* Evita que las imágenes se redimensionen automáticamente */
-    margin-left: auto; /* Empuja la imagen hacia la derecha */
+    flex: 0 0 auto;
+    /* Evita que las imágenes se redimensionen automáticamente */
+    margin-left: auto;
+    /* Empuja la imagen hacia la derecha */
 }
 
 /* Ajuste de tamaño para las imágenes */
 .image-container img {
-    max-width: 100%; /* Escala las imágenes proporcionalmente */
-    height: auto; /* Mantiene la proporción original */
+    max-width: 100%;
+    height: auto;
 }
 
 /* Responsividad: Alineación vertical en pantallas pequeñas */
 @media (max-width: 768px) {
     .image-container {
-        flex-direction: column; /* Cambia a diseño vertical */
-        align-items: center; /* Centra las imágenes */
+        flex-direction: column;
+        /* Cambia a diseño vertical */
+        align-items: center;
+        /* Centra las imágenes */
     }
 
     .image-container .image-left,
     .image-container .image-right {
-        margin: 10px 0; /* Espaciado entre imágenes en pantallas pequeñas */
+        margin: 10px 0;
+        /* Espaciado entre imágenes en pantallas pequeñas */
+    }
+
+    .contenido-lenguajes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-lenguajes img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .texto-lenguajes {
+        text-align: center;
     }
 }
