@@ -34,41 +34,40 @@ h1 {
 
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    margin: 0px;
     background: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente */
     border-radius: 10px;
-    overflow: hidden;
-    /* Para que el efecto degradado no se salga del contenedor */
+    align-items: center;
 }
 
 nav li {
     display: inline-block;
-    margin: 0;
-    font-size: 13px;
+    position: relative;
+    align-items: center;
 }
 
 nav a {
     display: block;
     text-decoration: none;
+    border-radius: 10px;
     color: #eee;
     padding: 15px 20px;
+    font-size: 15px;
     transition: background 0.3s, color 0.3s;
-    /* Transiciones suaves */
+    align-items: center;
 }
 
 nav a:hover {
-    background: linear-gradient(to right, #004cff, #00c8ff);
-    /* Degradado azul al pasar el ratón */
+   background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
+
 }
 
 section {
     margin-bottom: 20px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
-    /* Fondo blanco semitransparente */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
     /* Sombra con efecto neón */
@@ -94,6 +93,39 @@ img {
 }
 
 
+button {
+    font-family: 'Roboto Mono', 'monospace';
+    font-size: 16px;
+    color: #fff;
+    background: #0ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #0ff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Botón para ir al inicio */
+.home-button {
+    background-color: #000000;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto Mono', 'monospace';
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background: linear-gradient(to right, #004cff, #00c8ff);
+    color: #222;
+}
+
+/* Estilos para el botón flotante de subir */
 #botonSubir {
     display: none;
     position: fixed;
@@ -107,28 +139,13 @@ img {
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
+    transition: background 0.3s, color 0.3s;
 }
 
 #botonSubir:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
-}
 
-.home-button {
-    background-color: #000000;
-    color: #0ff;
-    text-shadow: 0 0 10px #0ff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Roboto Mono', monospace;
-    transition: background-color 0.3s;
-}
-
-.home-button:hover {
-    background-color: #000000;
 }
 
 /* Contenedor para las imágenes */
