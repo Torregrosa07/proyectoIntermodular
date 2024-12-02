@@ -10,6 +10,8 @@ body {
 
 /* Botón para ir al inicio */
 .home-button {
+    margin-top: 10px;
+    margin-right: auto;
     background: transparent;
     color: #0ff;
     text-shadow: 0 0 10px #0ff;
@@ -50,8 +52,8 @@ body {
 }
 /* Botón de enviar formulario */
 button[type="button"] {
-    background-color: #0ff;
-    color: #000;
+    background-color: transparent;
+    color: #0ff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
