@@ -337,3 +337,42 @@ button {
     margin-left: 20px;
     margin-bottom: 10px;
 }
+
+/* Contenedor para las imágenes */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Imagen alineada a la izquierda */
+.image-container .image-left {
+    flex: 0 0 auto; /* Evita que las imágenes se redimensionen automáticamente */
+    margin-right: auto; /* Empuja la imagen hacia la izquierda */
+}
+
+/* Imagen alineada a la derecha */
+.image-container .image-right {
+    flex: 0 0 auto; /* Evita que las imágenes se redimensionen automáticamente */
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
+}
+
+/* Ajuste de tamaño para las imágenes */
+.image-container img {
+    max-width: 100%; /* Escala las imágenes proporcionalmente */
+    height: auto; /* Mantiene la proporción original */
+}
+
+/* Responsividad: Alineación vertical en pantallas pequeñas */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: center; /* Centra las imágenes */
+    }
+
+    .image-container .image-left,
+    .image-container .image-right {
+        margin: 10px 0; /* Espaciado entre imágenes en pantallas pequeñas */
+    }
+}
