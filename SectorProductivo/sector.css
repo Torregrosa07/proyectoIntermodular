@@ -12,7 +12,10 @@ body {
     color: #eee;
     /* Texto claro */
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     color: #0ff;
     /* Color azul neón para los encabezados */
     text-shadow: 0 0 10px #0ff;
@@ -22,11 +25,12 @@ h1, h2, h3 {
 h1 {
     text-align: center;
     padding: 10px;
-    background:  #00c8ff;
+    background: #00c8ff;
     /* Degradado azul */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
+
 
 nav ul {
     list-style: none;
@@ -91,24 +95,25 @@ img {
 
 
 #botonSubir {
-  display: none;
-  position: fixed;
-  bottom: 60px;
-  right: 20px;
-  background-color: #000000;
-  color: #0ff;
-  text-shadow: 0 0 10px #0ff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: #000000;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 #botonSubir:hover {
     background: linear-gradient(to right, #004cff, #00c8ff);
     color: #222;
 }
+
 .home-button {
     background-color: #000000;
     color: #0ff;
@@ -120,8 +125,9 @@ img {
     font-size: 16px;
     font-family: 'Roboto Mono', monospace;
     transition: background-color 0.3s;
-   }
-   .home-button:hover {
+}
+
+.home-button:hover {
     background-color: #000000;
 }
 
@@ -135,8 +141,10 @@ img {
 
 .float-left-department {
     float: left;
-    margin-right: 30px; /* Añade espacio entre la imagen y el texto */
-    margin-bottom: 30px; /* Opcional, para separar verticalmente */
+    margin-right: 30px;
+    /* Añade espacio entre la imagen y el texto */
+    margin-bottom: 30px;
+    /* Opcional, para separar verticalmente */
 }
 
 .float-right {
@@ -149,23 +157,88 @@ img {
 .two-columns {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espaciado entre columnas */
+    gap: 20px;
+    /* Espaciado entre columnas */
     margin-top: 20px;
 }
 
 .column {
-    flex: 1; /* Ajusta automáticamente el tamaño de las columnas */
-    min-width: 300px; /* Ancho mínimo de cada columna */
+    flex: 1;
+    /* Ajusta automáticamente el tamaño de las columnas */
+    min-width: 300px;
+    /* Ancho mínimo de cada columna */
 }
 
 .column img {
-    max-width: 100%; /* Ajusta las imágenes al tamaño del contenedor */
+    max-width: 100%;
+    /* Ajusta las imágenes al tamaño del contenedor */
     height: auto;
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+        /* Reduce el padding en pantallas pequeñas */
+    }
+
+    nav li {
+        display: block;
+        /* Apila los elementos de la lista de navegación */
+        margin: 10px 0;
+    }
+
+    .image-container {
+        flex-direction: column;
+        /* Cambia a diseño vertical */
+        align-items: center;
+        /* Centra las imágenes */
+    }
+
+    .image-container .image-left,
+    .image-container .image-right {
+        margin: 10px 0;
+        /* Espaciado entre imágenes en pantallas pequeñas */
+    }
+
+    .contenido-lenguajes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-lenguajes img {
+        width: 100%;
+        /* Ajusta el ancho de las imágenes al 100% */
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .texto-lenguajes {
+        text-align: center;
+    }
+
     .two-columns {
-        flex-direction: column; /* Una sola columna en pantallas pequeñas */
+        flex-direction: column;
+        /* Una sola columna en pantallas pequeñas */
+    }
+
+    .column {
+        min-width: auto;
+        /* Elimina el ancho mínimo en pantallas pequeñas */
+    }
+
+    .float-left,
+    .float-right {
+        float: none;
+        /* Elimina la flotación en pantallas pequeñas */
+        margin: 10px auto;
+        /* Centra las imágenes */
+        display: block;
+        /* Asegúrate de que ocupen todo el ancho */
+    }
+
+    img {
+        width: 100%;
+        /* Ajusta el ancho de todas las imágenes al 100% */
+        height: auto;
     }
 }
-
