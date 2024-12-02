@@ -1,33 +1,28 @@
-// Verificar si el botón "Ir al Inicio" existe en la página
-var botonHome = document.getElementById("homeButton");
+var botonHome = document.getElementById("homeButton");// verificar si el botón "Ir al Inicio" existe en la página
 
 if (botonHome) {
     botonHome.addEventListener("click", function () {
-        // Redirigir a la página principal
-        window.location.href = "../index.html";
+        window.location.href = "../index.html"; // indica la redirección a la página principal
     });
 }
 
-// Obtener el botón de "Subir"
-var botonSubir = document.getElementById("botonSubir");
+var botonSubir = document.getElementById("botonSubir");// obtener el botón de "Subir"
 
 if (botonSubir) {
-    // Mostrar el botón cuando se hace scroll
-    window.onscroll = function () {
+    window.onscroll = function () {  // mostrar el botón cuando se hace scroll
         botonSubir.style.display =
             document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
                 ? "block"
                 : "none";
     };
 
-    // Subir al hacer clic en el botón de "Subir"
-    botonSubir.onclick = function () {
-        window.scrollTo({ top: 0, behavior: "smooth" }); // Desplazamiento suave hacia arriba
+    botonSubir.onclick = function () { // subir al hacer clic en el botón de "Subir"
+        window.scrollTo({ top: 0, behavior: "smooth" }); // desplazamiento suave hacia arriba
     };
 }
 
 function checkAnswers() {
-    // Respuestas correctas
+    // respuestas correctas
     const correctAnswers = {
         q1: "3", q2: "1", q3: "2", q4: "2", q5: "2", q6: "2", q7: "2",
         q8: "3", q9: "3", q10: "2", q11: "2", q12: "3", q13: "3", q14: "1",
@@ -40,8 +35,7 @@ function checkAnswers() {
         q51: "2", q52: "2",
     };
 
-    // Obtener el formulario y el contenedor de resultados
-    const form = document.getElementById("quiz-form");
+    const form = document.getElementById("quiz-form"); // obtener el formulario y el contenedor de resultados
     const resultContainer = document.getElementById("result");
 
     if (!form || !resultContainer) {
@@ -49,42 +43,40 @@ function checkAnswers() {
         return;
     }
 
-    // Limpiar estilos previos
-    form.querySelectorAll(".correct, .incorrect, .skipped").forEach((el) => {
+    form.querySelectorAll(".correct, .incorrect, .skipped").forEach((el) => { // limpiar estilos previos
         el.classList.remove("correct", "incorrect", "skipped");
     });
 
     let score = 0;
     const totalQuestions = Object.keys(correctAnswers).length;
 
-    // Recorrer las preguntas y evaluar respuestas
-    Object.keys(correctAnswers).forEach((questionId) => {
+    Object.keys(correctAnswers).forEach((questionId) => {  // recorrer las preguntas y evaluar respuestas
         const selectedOption = form.querySelector(`input[name="${questionId}"]:checked`);
         const correctOption = form.querySelector(`input[name="${questionId}"][value="${correctAnswers[questionId]}"]`);
 
         if (selectedOption) {
             if (selectedOption.value === correctAnswers[questionId]) {
-                // Respuesta correcta
+                // respuesta correcta
                 score++;
                 correctOption.parentElement.classList.add("correct");
             } else {
-                // Respuesta incorrecta
+                // respuesta incorrecta
                 selectedOption.parentElement.classList.add("incorrect");
             }
         } else if (correctOption) {
-            // Pregunta omitida
+            // pregunta omitida
             correctOption.parentElement.classList.add("skipped");
         }
     });
 
-    // Mostrar resultado
+    // mostrar resultado
     const skippedCount = totalQuestions - form.querySelectorAll("input:checked").length;
     resultContainer.innerHTML = `
         <p>Tu puntuación es <strong>${score}</strong> de <strong>${totalQuestions}</strong>.</p>
         <p>Porcentaje: <strong>${((score / totalQuestions) * 100).toFixed(2)}%</strong>.</p>
         <p>Preguntas sin responder: <strong>${skippedCount}</strong>.</p>
     `;
-    // Mostrar ventana emergente según la puntuación
+    // mostrar ventana emergente según la puntuación
     const percentage = (score / totalQuestions) * 100;
 
     if (percentage >= 90) {
