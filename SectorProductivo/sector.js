@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener todos los elementos de la lista de navegación
     const navItems = document.querySelectorAll('nav ul li a');
@@ -47,3 +46,5 @@ document.addEventListener('DOMContentLoaded', function () {
         document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
     };
 });
+
+
