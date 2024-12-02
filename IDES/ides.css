@@ -9,10 +9,10 @@ body {
     padding-top: 10px;
     background-color: #000000;
     color: #eee;
-    /* Fondo oscuro y texto claro */
+    /* estilo para el fondo */
 }
 
-/* Encabezado principal */
+/* encabezado */
 h1 {
     text-align: center;
     padding: 20px;
@@ -22,13 +22,13 @@ h1 {
     text-shadow: 0 0 10px #0ff;
 }
 
-/* Estilo de encabezados secundarios */
+/* estilo de encabezados secundarios */
 h2, h3 {
     color: #0ff;
     text-shadow: 0 0 10px #0ff;
 }
 
-/* Estilo del menú de navegación */
+/* estilo del menú de navegación */
 nav {
     margin: 20px auto;
     text-align: center;
@@ -62,30 +62,28 @@ nav a:hover {
     color: #222;
 }
 
-/* Contenedor de secciones */
+/* contenedor de las secciones */
 .container {
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
-/* Estilo de las cajas (section y article) */
-section, article {
+section, article { /* estilo de las cajas (section y article) */
     margin-bottom: 20px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+    background: rgba(255, 255, 255, 0.1); /* fondo blanco semitransparente */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Sombra con efecto neón */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* la sombra con efecto neón */
 }
 
-/* Listas ordenadas y desordenadas */
-ul,
+
+ul,/* listas ordenadas y desordenadas */
 ol {
     padding-left: 40px;
 }
 
-/* Estilo para las imágenes */
-img {
+img { /* estilo para las imágenes */
     max-width: 100%;
     height: auto;
     display: block;
@@ -95,15 +93,14 @@ img {
 }
 
 a {
-    color: #0ff; /* Cambia el color del enlace a un tono naranja */
+    color: #0ff; /* cambia el color del enlace a un tono naranja */
 }
 
 a:hover {
-    color: #ffffff; /* Cambia el color cuando el usuario pasa el ratón por encima */
+    color: #ffffff; /* cambia el color cuando el usuario pasa el ratón por encima */
 }
 
-/* Botón para ir al inicio */
-.home-button {
+.home-button { /* botón para ir al inicio */
     background-color: #000000;
     color: #0ff;
     text-shadow: 0 0 10px #0ff;
@@ -121,8 +118,7 @@ a:hover {
     color: #222;
 }
 
-/* Estilos para el botón flotante de subir */
-#botonSubir {
+#botonSubir { /* estilos para el botón flotante de subir */
     display: none;
     position: fixed;
     bottom: 60px;
@@ -143,9 +139,8 @@ a:hover {
     color: #222;
 }
 
-/* Asegurarse que los botones en las secciones (como en la barra de navegación) tengan un estilo consistente */
 button {
-    font-family: 'Roboto Mono', 'monospace';
+    font-family: 'Roboto Mono', 'monospace'; /* asegurarse que los botones en las secciones (como en la barra de navegación) tengan un estilo consistente */
     font-size: 16px;
     color: #fff;
     background: #0ff;
@@ -163,8 +158,7 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* Añadir márgenes y padding para una mejor presentación */
-h1, h2, h3 {
+h1, h2, h3 { /* añadir márgenes y padding para una mejor presentación */
     margin-top: 20px;
     margin-bottom: 20px;
 }
