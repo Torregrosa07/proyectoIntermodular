@@ -30,12 +30,10 @@ botonSubir.onclick = function () {
 function checkAnswers() {
     // Respuestas correctas
     const correctAnswers = {
-        q1: "c", // Respuesta correcta para la pregunta 1
-        q2: "a", // Respuesta correcta para la pregunta 2
-        q3: "b",  // Respuesta correcta para la pregunta 3
-        q4: "b", // Respuesta correcta para la pregunta 3
-        q5: "b",// Respuesta correcta para la pregunta 3
-        q6: "b",// Respuesta correcta para la pregunta 3
+        q1: "3", // Respuesta correcta para la pregunta 1
+        q2: "1", // Respuesta correcta para la pregunta 2
+        q3: "2",  // Respuesta correcta para la pregunta 3
+        q4: "2", // Respuesta correcta para la pregunta 3
     };
 
     // Obtener el formulario y el contenedor de resultados
@@ -43,7 +41,7 @@ function checkAnswers() {
     const resultContainer = document.getElementById("result");
     let score = 0;
 
-    // Iterar a través de cada pregunta
+    // recorremos las preguntas
     Object.keys(correctAnswers).forEach((questionId) => {
         const selectedOption = form.querySelector(`input[name="${questionId}"]:checked`);
 
@@ -59,12 +57,11 @@ function checkAnswers() {
                     .parentElement.classList.add("incorrect");
             }
         } else {
-            // Si no se selecciona ninguna opción
             document.querySelector(`input[name="${questionId}"]`).parentElement.classList.add("incorrect");
         }
     });
 
-    // Mostrar el resultado
+    // muestra del resultado
     resultContainer.innerHTML = `Tu puntuación es ${score} de ${Object.keys(correctAnswers).length}`;
 }
 
