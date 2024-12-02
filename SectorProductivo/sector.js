@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (botonHome) {
         botonHome.addEventListener('click', function () {
-            // Redirigir a la página principal
+            // devolver a la pagina principal
             window.location.href = "../index.html";
         });
     }
 
-    // Obtener el botón de "Subir"
+    // Obtener el botón 
     var botonSubir = document.getElementById("botonSubir");
 
     // Mostrar el botón cuando se hace scroll
@@ -40,10 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    // Subir al hacer clic en el botón de "Subir"
+    // Subir al hacer clic 
     botonSubir.onclick = function () {
         document.body.scrollTop = 0; // Para Safari
-        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera   
+        
+        
     };
 });
 
