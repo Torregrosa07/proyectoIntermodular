@@ -76,6 +76,15 @@ function checkAnswers() {
             correctOption.parentElement.classList.add("skipped");
         }
     });
+
+    // Mostrar resultado
+    const skippedCount = totalQuestions - form.querySelectorAll("input:checked").length;
+    resultContainer.innerHTML = `
+        <p>Tu puntuación es <strong>${score}</strong> de <strong>${totalQuestions}</strong>.</p>
+        <p>Porcentaje: <strong>${((score / totalQuestions) * 100).toFixed(2)}%</strong>.</p>
+        <p>Preguntas sin responder: <strong>${skippedCount}</strong>.</p>
+    `;
+    // Mostrar ventana emergente según la puntuación
     const percentage = (score / totalQuestions) * 100;
 
     if (percentage >= 90) {
@@ -88,12 +97,3 @@ function checkAnswers() {
         alert(`¡Necesitas mejorar! Has obtenido una puntuación de ${percentage.toFixed(2)}%. ¡Repasa los conceptos básicos de software y hardware!`);
     }
 }
-
-    // Mostrar resultado
-    const skippedCount = totalQuestions - form.querySelectorAll("input:checked").length;
-    resultContainer.innerHTML = `
-        <p>Tu puntuación es <strong>${score}</strong> de <strong>${totalQuestions}</strong>.</p>
-        <p>Porcentaje: <strong>${((score / totalQuestions) * 100).toFixed(2)}%</strong>.</p>
-        <p>Preguntas sin responder: <strong>${skippedCount}</strong>.</p>
-    `;
-
