@@ -108,10 +108,14 @@ p {
 
 }
 
-@media (max-width:800px) {
-    .image {
-        max-width: 200px;
-        max-height: 210px;
+@media (max-width: 768px) {
+    .grid {
+      flex-direction: column; /* Apila las imágenes verticalmente */
+      align-items: center; /* Centra las imágenes horizontalmente */
     }
-
-}
+  
+    .image {
+      max-width: 90%; /* Ajusta el ancho de las imágenes al 90% */
+      height: auto; 
+    }
+  }
