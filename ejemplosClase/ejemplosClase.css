@@ -83,24 +83,21 @@ p {
     text-align: left;
 }
 
-/* Estilos para las preguntas */
 .pregunta {
     margin-bottom: 20px;
 }
 
-/* Estilos para las opciones de respuesta */
 .opciones label {
     display: block;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
-/* Estilos para los botones de radio */
 input[type="radio"] {
     margin-right: 5px;
 }
 
-/* Botón de enviar formulario */
+/* botón de enviar formulario */
 button[type="button"] {
     background-color: #0ff;
     color: #000;
@@ -118,7 +115,7 @@ button[type="button"]:hover {
     color: #222;
 }
 
-/* Estilos para respuestas correctas e incorrectas */
+/* estilos para respuestas correctas e incorrectas */
 .correct {
     color: green;
     font-weight: bold;
@@ -129,7 +126,7 @@ button[type="button"]:hover {
     font-weight: bold;
 }
 
-/* Estilo para el resultado */
+/* estilo para el resultado */
 #result {
     margin-top: 20px;
     text-align: center;
