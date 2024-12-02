@@ -1,38 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Obtener todos los elementos de la lista de navegación
-    const navItems = document.querySelectorAll('nav ul li a');
 
-    // Añadir un evento de clic a cada elemento de la lista
-    navItems.forEach(item => {
+    const navItems = document.querySelectorAll('nav ul li a');//se guardan todos los elementos
+
+    navItems.forEach(item => { //añadimos un evento de clic a cada sección
         item.addEventListener('click', function (event) {
-            event.preventDefault(); // Evitar el comportamiento por defecto del enlace
+            event.preventDefault(); // se evita el comportamiento por defecto del enlace
 
-            // Obtener el ID del enlace
-            const targetId = this.getAttribute('href');
+            const targetId = this.getAttribute('href');// se obtene el ID del enlace
             const targetSection = document.querySelector(targetId);
 
-            // Desplazarse suavemente a la sección correspondiente
-            targetSection.scrollIntoView({
+            targetSection.scrollIntoView({ // desplazarse suavemente a la sección correspondiente
                 behavior: 'smooth'
             });
         });
     });
 
-    // Verificar si el botón "Ir al Inicio" existe en la página
-    var botonHome = document.getElementById("homeButton");
+    var botonHome = document.getElementById("homeButton"); // verificación si el botón "Ir al Inicio" existe en la página
 
     if (botonHome) {
-        botonHome.addEventListener('click', function () {
-            // Redirigir a la página principal
-            window.location.href = "../index.html";
+        botonHome.addEventListener('click', function () {           
+            window.location.href = "../index.html"; // hace la redirección a la página principal
         });
     }
 
-    // Obtener el botón de "Subir"
-    var botonSubir = document.getElementById("botonSubir");
+    var botonSubir = document.getElementById("botonSubir"); // obtener el botón de "Subir"
 
-    // Mostrar el botón cuando se hace scroll
-    window.onscroll = function () {
+    window.onscroll = function () {  // mostrar el botón cuando se hace scroll
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             botonSubir.style.display = "block";
         } else {
@@ -40,10 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    // Subir al hacer clic en el botón de "Subir"
-    botonSubir.onclick = function () {
-        document.body.scrollTop = 0; // Para Safari
-        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+    botonSubir.onclick = function () { // subir al hacer clic en el botón de "Subir"
+        document.body.scrollTop = 0; // para Safari
+        document.documentElement.scrollTop = 0; // para Chrome, Firefox, IE y Opera
     };
 });
 
