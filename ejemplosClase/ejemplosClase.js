@@ -67,3 +67,4 @@ function checkAnswers() {
     // Mostrar el resultado
     resultContainer.innerHTML = `Tu puntuación es ${score} de ${Object.keys(correctAnswers).length}`;
 }
+
