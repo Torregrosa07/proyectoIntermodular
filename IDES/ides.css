@@ -179,3 +179,25 @@ footer {
     color: #fff;
     margin-top: 40px;
 }
+@media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .container {
+      width: 95%;
+    }
+  
+    .installation-guide img {
+      width: 100%; 
+    }
+  
+    .section-content img {
+      width: 100%; 
+    }
+  }
