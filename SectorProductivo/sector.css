@@ -124,3 +124,42 @@ img {
    .home-button:hover {
     background-color: #000000;
 }
+/* Estilo general para el contenedor de la sección */
+.section-container {
+    display: flex;
+    flex-wrap: wrap; /* Esto asegura que el contenido se ajuste bien en pantallas pequeñas */
+}
+
+/* Estilo para el texto */
+.section-container .text-content {
+    flex: 1; /* Esto toma el espacio disponible a la izquierda */
+}
+
+/* Estilo para la imagen */
+.section-container .image-content {
+    flex: 0 0 auto; /* Esto asegura que la imagen no se expanda */
+    margin-left: 20px; /* Espaciado entre el texto y la imagen */
+}
+
+.section-container img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción */
+}
+
+/* Contenedor de dos columnas */
+.two-columns {
+    display: flex;
+    gap: 20px; /* Espaciado entre columnas */
+}
+
+/* Estilo para cada columna */
+.two-columns .column {
+    flex: 1; /* Cada columna ocupa el mismo ancho */
+}
+
+/* Responsividad: Ajusta a una sola columna en pantallas pequeñas */
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column; /* Cambia a diseño vertical */
+    }
+}
