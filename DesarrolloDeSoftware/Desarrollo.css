@@ -343,31 +343,74 @@ button {
 
 /* Responsividad: Alineación vertical en pantallas pequeñas */
 @media (max-width: 768px) {
-    .image-container {
-        flex-direction: column;
-        /* Cambia a diseño vertical */
-        align-items: center;
-        /* Centra las imágenes */
+    body {
+      padding: 10px; 
     }
-
-    .image-container .image-left,
-    .image-container .image-right {
-        margin: 10px 0;
-        /* Espaciado entre imágenes en pantallas pequeñas */
+  
+    nav li {
+      display: block; 
+      margin: 10px 0;
     }
-
+  
+    .contenido-codigo,
+    .contenido-codigo-objeto,
+    .contenido-codigo-ejecutable {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .contenido-codigo img,
+    .contenido-codigo-objeto img,
+    .contenido-codigo-ejecutable img {
+      margin: 10px 0; 
+    }
+  
     .contenido-lenguajes {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-
+  
     .contenido-lenguajes img {
-        width: 200px;
-        height: 200px;
+      width: 100%; 
+      height: auto;
+      margin: 10px 0;
     }
-
-    .texto-lenguajes {
-        text-align: center;
+  
+    .texto-lenguaje {
+      text-align: center;
     }
-}
+  
+    .proceso-contenedor {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .proceso-contenedor img {
+      margin: 10px 0;
+    }
+  
+    .metodologias-container {
+      grid-template-columns: 1fr; /* Una sola columna */
+    }
+  
+    .columnas {
+      flex-direction: column; 
+    }
+  
+    .columna {
+      width: 100%; 
+    }
+  
+    .imagen-derecha {
+      float: none; 
+      margin: 10px auto; 
+      display: block;
+    }
+  
+    img { 
+      width: 100%;
+      height: auto;
+      margin: 10px auto;
+    }
+  }
 
