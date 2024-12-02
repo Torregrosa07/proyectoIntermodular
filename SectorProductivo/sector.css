@@ -138,3 +138,34 @@ img {
     margin-right: 30px; /* Añade espacio entre la imagen y el texto */
     margin-bottom: 30px; /* Opcional, para separar verticalmente */
 }
+
+.float-right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para dividir en dos columnas */
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre columnas */
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1; /* Ajusta automáticamente el tamaño de las columnas */
+    min-width: 300px; /* Ancho mínimo de cada columna */
+}
+
+.column img {
+    max-width: 100%; /* Ajusta las imágenes al tamaño del contenedor */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column; /* Una sola columna en pantallas pequeñas */
+    }
+}
+
