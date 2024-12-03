@@ -66,7 +66,7 @@ nav a:hover {
 .container {
     width: 80%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 section, article { /* estilo de las cajas (section y article) */
