@@ -620,55 +620,86 @@
 
 
                     <div class="metodologias-container">
-                        <h2>Conceptos Clave</h2>
+                        <p>Según Maddison (1983), una metodología es un conjunto de enfoques, fases, procedimientos,
+                            reglas, técnicas, herramientas y documentación, además de aspectos formativos destinados a
+                            quienes desarrollan sistemas de información. Mientras que el ciclo de vida define qué se
+                            busca obtener en cada etapa del proyecto, una metodología detalla cómo se realizan las
+                            tareas, qué herramientas usar, y cómo se organizan las actividades.</p>
+
+                        <h2>Conceptos clave</h2>
                         <ul>
-                            <li><strong>Tarea:</strong> Una actividad específica dentro del desarrollo, como analizar
-                                requisitos o escribir código.</li>
-                            <li><strong>Procedimiento:</strong> Pasos a seguir para completar una tarea.</li>
-                            <li><strong>Técnica:</strong> Método para aplicar un procedimiento, a menudo usando
-                                diagramas.</li>
-                            <li><strong>Herramienta:</strong> Software que ayuda a automatizar tareas.</li>
+                            <li><strong>Proceso de desarrollo:</strong> Se organiza en fases donde se realizan diversas
+                                tareas.</li>
+                            <li><strong>Tareas:</strong> Cada tarea sigue un procedimiento que genera productos
+                                intermedios (útiles para tareas futuras) o finales (entregados al cliente).</li>
+                            <li><strong>Métodos y herramientas:</strong> Los métodos estructuran procedimientos mediante
+                                diagramas y textos. Las herramientas automatizan parcialmente estas tareas; un ejemplo
+                                son las herramientas CASE (Computer-Aided Software Engineering).</li>
                         </ul>
 
-                        <h2>Evolución de las Metodologías</h2>
-                        <p>Las metodologías han evolucionado con el tiempo, pasando del desarrollo artesanal a las
-                            metodologías estructuradas y luego a las orientadas a objetos.</p>
+                        <h2>Evolución de las metodologías</h2>
+                        <ol>
+                            <li><strong>Desarrollo artesanal:</strong> En sus inicios, el desarrollo de software era no
+                                estructurado, lo que condujo a la "crisis del software".</li>
+                            <li><strong>Metodologías estructuradas:</strong> Surgieron para regular la programación
+                                mediante enfoques estructurados para diseño y análisis.</li>
+                            <li><strong>Metodologías orientadas a objetos:</strong> En los años 80 se introdujeron
+                                lenguajes orientados a objetos y métodos basados en este paradigma, centrados en los
+                                datos y su comportamiento en lugar de los procesos.</li>
+                        </ol>
 
-                        <h2>RUP (Proceso Unificado de Rational)</h2>
-                        <p>Actualmente, el Proceso Unificado de Rational (RUP) es una metodología popular que divide el
-                            desarrollo en fases e iteraciones.</p>
-                        <p>RUP se centra en:</p>
+                        <h3>Proceso Unificado de Rational (RUP)</h3>
+                        <p>El proceso RUP combina dos dimensiones:</p>
                         <ul>
-                            <li><strong>Roles:</strong> Define las responsabilidades de cada persona en el equipo.</li>
-                            <li><strong>Actividades:</strong> Tareas que realiza cada rol.</li>
-                            <li><strong>Productos intermedios:</strong> Resultados de las actividades (diagramas,
-                                código, etc.).</li>
-                            <li><strong>Flujos de trabajo:</strong> Secuencias de actividades.</li>
-                            <div class="metodologias-agiles">
+                            <li><strong>Temporal:</strong> Incluye ciclos, fases, iteraciones e hitos.</li>
+                            <li><strong>Estática:</strong> Relaciona actividades, productos intermedios, roles y flujos
+                                de trabajo.</li>
+                        </ul>
+                        <p>Cada ciclo incluye cuatro fases:</p>
+                        <ol>
+                            <li><strong>Inicio:</strong> Analiza la viabilidad del sistema, define objetivos, alcance,
+                                riesgos y recursos.</li>
+                            <li><strong>Elaboración:</strong> Establece la base arquitectónica, planifica el proyecto y
+                                aborda los riesgos más importantes.</li>
+                            <li><strong>Construcción:</strong> Desarrolla el sistema de manera iterativa e incremental.
+                            </li>
+                            <li><strong>Transición:</strong> Finaliza el sistema, abordando ajustes y problemas
+                                emergentes para preparar su uso en producción.</li>
+                        </ol>
+                        <p>Además, RUP incluye actividades como modelado del negocio, gestión de requisitos, diseño,
+                            implementación, pruebas, y despliegue, agrupadas en flujos de ingeniería y apoyo.</p>
 
-                                <h3>1. Metodologías Ágiles</h3>
-                                <p>Se caracterizan por su flexibilidad y enfoque en la entrega continua de valor. </p>
-                                <img src="metodologiasagiles.jpg" alt="Metodologías Agiles" width="370" height="250">
-                                <ul>
-                                    <li><b>Scrum:</b> Desarrollo iterativo en sprints cortos, con roles clave como
-                                        Product
-                                        Owner,
-                                        Scrum Master y Equipo de Desarrollo. </li>
-                                    <li><b>Kanban:</b> Visualización del flujo de trabajo, límite en el trabajo en
-                                        progreso para
-                                        optimizar el flujo.</li>
-                                    <li><b>Extreme Programming (XP):</b> Prioriza prácticas de ingeniería como la
-                                        programación
-                                        en
-                                        parejas y el desarrollo guiado por pruebas.</li>
-                                </ul>
-                            </div>
+                        <h3>Metodologías ágiles</h3>
+                        <p>Las metodologías ágiles enfatizan la entrega continua de software funcional, priorizando la
+                            colaboración y la adaptabilidad sobre procesos rígidos. Entre sus principios se destacan:
+                        </p>
+                        <ul>
+                            <li>Valorar a los individuos y las interacciones sobre los procesos y herramientas.</li>
+                            <li>Producir software operativo más que documentación exhaustiva.</li>
+                            <li>Colaborar con el cliente en lugar de negociar contratos.</li>
+                            <li>Adaptarse al cambio en lugar de seguir estrictamente un plan.</li>
+                        </ul>
 
+                        <h3>Programación Extrema (XP)</h3>
+                        <p>Propuesta por Kent Beck, XP se basa en valores como simplicidad, comunicación,
+                            retroalimentación, valentía y respeto. Este enfoque fomenta:</p>
+                        <ul>
+                            <li>Diseños simples y refactorización cuando sea necesario.</li>
+                            <li>Comunicación continua y cercana con el cliente.</li>
+                            <li>Retroalimentación frecuente mediante entregas incrementales.</li>
+                            <li>Pruebas continuas y programación en pareja.</li>
+                        </ul>
 
-                            <p>La elección de la metodología adecuada dependerá del proyecto, las necesidades del
-                                cliente y
-                                el
-                                equipo de desarrollo.</p>
+                        <h4>Scrum</h4>
+                        <p>Scrum, desarrollado por Jeff Sutherland, se enfoca en la entrega de valor al cliente mediante
+                            ciclos cortos llamados sprints. Sus pilares son:</p>
+                        <ul>
+                            <li><strong>Transparencia:</strong> Todos conocen el estado y progreso del proyecto.</li>
+                            <li><strong>Inspección:</strong> Autoevaluación constante por parte del equipo.</li>
+                            <li><strong>Adaptación:</strong> Cambios flexibles para cumplir los objetivos.</li>
+                        </ul>
+                        <p>Cada sprint incluye planificación, reuniones diarias, revisión de avances y retrospectiva
+                            para mejorar continuamente.</p>
                     </div>
             </section>
     </div>
