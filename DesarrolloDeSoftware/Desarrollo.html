@@ -344,44 +344,65 @@
                     en una computadora física independiente. Es básicamente un ordenador que se inserta en otro.</p>
                 <img src="Imagenes/maquinas-virtuales.jpg" width="400" height="250"
                     alt="Representación de una máquina virtual">
-                    <h2>1. Máquinas Virtuales de Sistema</h2>
-                    <p>
-                        Estas aplicaciones emulan completamente un ordenador, lo que permite instalar en su interior otro sistema operativo con sus propios componentes, como disco duro, memoria, tarjeta gráfica, etc. 
-                        La experiencia al trabajar con una máquina virtual de sistema es similar a la de una máquina real. Ejemplos destacados son <strong>VMware Workstation</strong> y <strong>VirtualBox</strong>.
-                    </p>
-                    <p>
-                        Estas máquinas son útiles para disponer de varios sistemas operativos en un mismo equipo, instalando uno en el hardware físico y otro en la máquina virtual. 
-                        Este enfoque resulta ideal para evaluar nuevos sistemas o probar aplicaciones en distintas plataformas. Sin embargo, es importante señalar que estas máquinas requieren recursos significativos del ordenador físico, 
-                        especialmente en términos de memoria RAM y espacio en disco.
-                    </p>
-                
-                    <h2>2. Máquinas Virtuales de Proceso</h2>
-                    <p>
-                        Este tipo de máquina virtual está diseñado para ejecutar un proceso específico dentro de un sistema operativo. La máquina se activa al iniciar el proceso y se detiene al concluir. 
-                        Su propósito principal es proporcionar un entorno de ejecución que sea independiente del hardware y del sistema operativo, haciendo que los programas funcionen de manera uniforme en cualquier plataforma.
-                    </p>
-                    <p>
-                        Un ejemplo destacado de este tipo de máquinas es la <strong>Máquina Virtual de Java (JVM, Java Virtual Machine)</strong>, que hace posible que los programas escritos en Java sean portátiles. 
-                        Esto se logra porque los programas no son ejecutados directamente por el procesador, sino por la JVM.
-                    </p>
-                
-                    <h2>Proceso para Ejecutar un Programa en Java</h2>
-                    <ol>
-                        <li>
-                            <strong>Creación del código fuente:</strong> El desarrollador escribe el programa en lenguaje Java utilizando un editor de texto. 
-                            Esto genera un archivo de texto con extensión <code>.java</code>.
-                        </li>
-                        <li>
-                            <strong>Compilación:</strong> El código fuente se compila utilizando el compilador <code>javac</code>, produciendo un archivo con extensión <code>.class</code> 
-                            si no se detectan errores. Este archivo contiene un lenguaje intermedio llamado <em>bytecode</em>, el cual es independiente de la plataforma.
-                        </li>
-                        <li>
-                            <strong>Ejecución:</strong> La Máquina Virtual de Java traduce el archivo <code>.class</code> a código binario para su ejecución. 
-                            Como la JVM está disponible en múltiples sistemas operativos (Windows, Linux, macOS, etc.), los programas pueden ejecutarse en diversas plataformas sin modificaciones.
-                        </li>
-                    </ol>
-                
-                    <img src="javaclass.png" alt="Proceso para Ejecutar un Programa en Java" width="400" height="150">
+                <h2>1. Máquinas Virtuales de Sistema</h2>
+                <p>
+                    Estas aplicaciones emulan completamente un ordenador, lo que permite instalar en su interior otro
+                    sistema operativo con sus propios componentes, como disco duro, memoria, tarjeta gráfica, etc.
+                    La experiencia al trabajar con una máquina virtual de sistema es similar a la de una máquina real.
+                    Ejemplos destacados son <strong>VMware Workstation</strong> y <strong>VirtualBox</strong>.
+                </p>
+                <p>
+                    Estas máquinas son útiles para disponer de varios sistemas operativos en un mismo equipo, instalando
+                    uno en el hardware físico y otro en la máquina virtual.
+                    Este enfoque resulta ideal para evaluar nuevos sistemas o probar aplicaciones en distintas
+                    plataformas. Sin embargo, es importante señalar que estas máquinas requieren recursos significativos
+                    del ordenador físico,
+                    especialmente en términos de memoria RAM y espacio en disco.
+                </p>
+
+                <h2>2. Máquinas Virtuales de Proceso</h2>
+                <p>
+                    Este tipo de máquina virtual está diseñado para ejecutar un proceso específico dentro de un sistema
+                    operativo. La máquina se activa al iniciar el proceso y se detiene al concluir.
+                    Su propósito principal es proporcionar un entorno de ejecución que sea independiente del hardware y
+                    del sistema operativo, haciendo que los programas funcionen de manera uniforme en cualquier
+                    plataforma.
+                </p>
+                <p>
+                    Un ejemplo destacado de este tipo de máquinas es la <strong>Máquina Virtual de Java (JVM, Java
+                        Virtual Machine)</strong>, que hace posible que los programas escritos en Java sean portátiles.
+                    Esto se logra porque los programas no son ejecutados directamente por el procesador, sino por la
+                    JVM.
+                </p>
+
+                <h2>¿Cómo evoluciona un código fuente Java a class con NetBeans?</h2>
+                <ol>
+                    <li>
+                        <strong>Primer Paso:</strong> Creamos un Proyecto:
+                        <img src="paso1.png" alt="Paso 1" width="400" height="250">
+                    </li>
+                    <li>
+                        <strong>Segundo Paso:</strong> Verificamos las carpetas creadas por el proyecto
+                        <img src="paso2.png" alt="Paso 2" width="400" height="250">
+                    </li>
+                    <li>
+                        <strong>Tercer Paso:</strong> En NetBeans, arriba en el simbolo del martillo (Build Project),
+                        damos click para compilar manualmente el proyecto activo o seleccionado
+                        es útil para tomar todos los archivos .java del proyecto y genera los archivos .class
+                        correspondientes.
+                        <img src="paso3.png" alt="Paso 3" width="400" height="250">
+                    </li>
+                    <li>
+                        <strong>Cuarto Paso:</strong> Volvemos a verificar la carpeta del proyecto:
+                        <img src="paso4.png" alt="Paso 4" width="400" height="250">
+                    </li>
+                    <li>
+                        <strong>Quinto Paso:</strong> Vemos que se ha añadido un archivo .jar a la carpeta dist, el cual contiene las distintas librerías.
+                        <img src="paso5.png" alt="Paso 5" width="400" height="250">
+                    </li>
+                </ol>
+
+                <img src="javaclass.png" alt="Proceso para Ejecutar un Programa en Java" width="400" height="150">
                 </ul>
             </div>
         </section>
