@@ -259,3 +259,15 @@ button {
         height: auto;
     }
 }
+
+.text-image-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.text-image-container img {
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
