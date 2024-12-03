@@ -271,3 +271,66 @@ button {
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
+/* General container for text and images */
+.text-image-container {
+    display: flex;
+    align-items: flex-start; /* Aligns the content at the top */
+    gap: 20px; /* Space between text and image */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.text-content {
+    flex: 2; /* Takes up more space for text */
+}
+
+.image-content img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Keeps the aspect ratio */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* General container for text and images */
+.text-image-container {
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido al inicio */
+    gap: 20px; /* Espacio entre texto e imagen */
+    margin-bottom: 20px; /* Espaciado inferior entre secciones */
+}
+
+.text-content {
+    flex: 2; /* Prioriza el espacio para el texto */
+}
+
+.image-content img {
+    max-width: 100%; /* Imagen responsiva */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc; /* Viñetas estándar */
+    margin-left: 20px; /* Sangría de las listas */
+}
+
+/* Espaciado entre encabezados y secciones */
+h3, h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Sección general */
+section {
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Imagen: Mantiene bordes sutiles */
+img {
+    border: 1px solid #ddd; /* Borde tenue */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno del borde */
+}
+
+
