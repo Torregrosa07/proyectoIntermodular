@@ -239,32 +239,6 @@ button {
 
 }
 
-.metodologias-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Dos columnas */
-    gap: 20px;
-    /* Espacio entre columnas */
-}
-
-.metodologias-container div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.metodologias-container h3 {
-    text-align: center;
-}
-
-.metodologias-container img {
-    margin-top: 10px;
-}
-
-.metodologias-container ul {
-    padding-left: 20px;
-    text-align: left;
-}
 
 
 .devops-img {
