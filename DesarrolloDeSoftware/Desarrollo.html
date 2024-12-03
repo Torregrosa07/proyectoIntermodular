@@ -18,7 +18,6 @@
                 <li><a href="#">Conceptos Básicos</a>
                     <ul>
                         <li><a href="#concepto-software">Concepto de Software</a></li>
-                        <li><a href="#relacion-software-hardware">Relacion entre el Software y el Hardware</a></li>
                         <li><a href="#conceptos-codigo">Conceptos de Código</a></li>
                         <li><a href="#lenguajes-de-programacion">Lenguajes de Programación</a></li>
                     </ul>
@@ -42,69 +41,75 @@
                     </ul>
                 </li>
             </ul>
-        </nav>        
+        </nav>
 
         <section id="concepto-software">
             <div class="informacion">
-                <h2>Concepto de Software</h2>
-                <p>Se conoce como software o soporte lógico al sistema formal de un sistema informático, que
-                    comprende el conjunto de los componentes lógicos necesarios que hace posible la realización de
-                    tareas específicas, en contraposición a los componentes físicos que son llamados hardware. La
-                    interacción entre el software y el hardware hace operativo un ordenador (u otro dispositivo), es
-                    decir, el software envía instrucciones que el hardware ejecuta, haciendo posible su
-                    funcionamiento.</p>
+                <h2>¿Qué es el Software?</h2>
+
+                <p>Para entender qué es el software, imaginemos un ordenador. El software es como la mente que le da
+                    vida al cuerpo (hardware). La RAE lo describe simplemente como un conjunto de programas e
+                    instrucciones que la computadora usa para hacer tareas. Pressman, en cambio, lo define con más
+                    detalle, incluyendo las instrucciones (programas), la forma en que se organizan los datos y la
+                    documentación que explica cómo funciona.</p>
+                <img src="pressman.jpg" alt="Pressman" width="400" height="300">
+
+                <h2>¿Cómo funciona?</h2>
+
+                <p>El ordenador tiene tres partes principales:</p>
+
+                <ol>
+                    <li>
+                        <h4>Unidad Central de Proceso (CPU)</h4>
+                        <p>Ejecuta las instrucciones de los programas, traduciendo operaciones complejas en operaciones
+                            aritméticas y lógicas básicas.</p>
+                        <ul>
+                            <li>Unidad Aritmético-Lógica (ALU): Ejecuta operaciones aritméticas y lógicas</li>
+                            <li>Unidad de Control (UC): Recoge y ordena la ejecución de instrucciones</li>
+                            <li>Registros: Almacenamiento interno de la CPU</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h4>Memoria Principal (RAM)</h4>
+                        <p>Contiene las instrucciones del programa y los datos. Es una memoria volátil que se borra al
+                            apagar el ordenador.</p>
+                    </li>
+
+                    <li>
+                        <h4>Unidad de Entrada/Salida</h4>
+                        <p>Permite la comunicación del ordenador con el exterior mediante diversos periféricos:</p>
+                        <ul>
+                            <li>Periféricos de Entrada: Teclado, ratón</li>
+                            <li>Periféricos de Salida: Pantalla, impresora</li>
+                            <li>Periféricos de Entrada/Salida: Módem, tarjeta de red, dispositivos de almacenamiento
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <img src="Imagenes/vonneumann.png" alt="Maquina de Von Neumann" width="400" height="250">
+                <p>El software son las instrucciones que se guardan en la memoria RAM. La CPU las lee y las ejecuta,
+                    usando los datos que también están en la memoria. Los resultados se pueden mostrar en la pantalla o
+                    guardar en el disco duro.</p>
+
+                <h3>Tipos de software</h3>
+
+                <ul>
+                    <li><strong>Software de sistemas:</strong> Es el sistema operativo, como Windows o macOS, que
+                        permite usar el ordenador e interactuar con él.</li>
+                    <li><strong>Software de programación:</strong> Son las herramientas que usan los programadores para
+                        crear nuevo software.</li>
+                    <li><strong>Software de aplicación:</strong> Son los programas que usamos a diario, como
+                        procesadores de texto, navegadores web o videojuegos.</li>
+                </ul>
+
+                <p>En resumen, el software es lo que hace que un ordenador sea útil. Son las instrucciones que le dicen
+                    qué hacer, cómo procesar la información y cómo interactuar con nosotros.</p>
+
                 <img src="conceptosotware.jpg" alt="Imagen Software" width="400" height="250">
             </div>
         </section>
 
-
-        <section id="relacion-software-hardware">
-            <div class="informacion">
-                <h2>¿Qué relación existe entre el software y el hardware?</h2>
-                <h4>El software necesita del hardware para funcionar, y el hardware depende del software para ser útil.
-                    La relación se puede entender a través de los siguientes puntos:</h4>
-                <ol>
-                    <li>
-                        <h4>Instrucciones del Software:</h4>
-                        <p>El software envía instrucciones al hardware para que realice operaciones específicas, como
-                            mostrar una imagen en la pantalla o imprimir un documento. Esto ocurre mediante lenguajes de
-                            máquina que el hardware puede interpretar.</p>
-                    </li>
-
-                    <li>
-                        <h4>Intermediación del Sistema Operativo::</h4>
-                        <p>El sistema operativo actúa como un intermediario entre el hardware y el software de
-                            aplicación. Por ejemplo, cuando un programa solicita escribir un archivo en el disco, el
-                            sistema operativo gestiona esta operación utilizando controladores (drivers)..</p>
-                    </li>
-
-                    <li>
-                        <h4>Limitaciones Mutuas:</h4>
-                        <ul>El software está limitado por las capacidades del hardware. Un programa diseñado para
-                            gráficos
-                            avanzados requerirá hardware con capacidad gráfica suficiente (como una tarjeta gráfica
-                            potente).</ul>
-                        <ul>Del mismo modo, el hardware sin software compatible no puede realizar funciones específicas.
-                        </ul>
-                    <li>
-                        <h4>Optimización y Sincronización:</h4>
-                        <p>Para un rendimiento óptimo, el software debe estar diseñado teniendo en cuenta las
-                            capacidades del hardware. Esto incluye el uso eficiente de CPU, memoria y otros recursos.
-                        </p>
-                    <li>
-                        <h4>Evolución Conjunta:</h4>
-                        <p> A medida que la tecnología avanza, el hardware y el software evolucionan juntos. Por
-                            ejemplo, el desarrollo de procesadores más rápidos permite que el software sea más complejo
-                            y poderoso.
-                        </p>
-                    </li>
-                    </li>
-                    </li>
-
-                </ol>
-                <img src="relacion-software-hardware.jpg" alt="Imagen Relación entre Software y Hardware" width="400" height="250">
-            </div>
-        </section>
 
         <section id="conceptos-codigo">
             <div class="informacion">
@@ -142,7 +147,7 @@
                 <article>
                     <h3>Código Ejecutable</h3>
                     <div class="contenido-codigo-ejecutable">
-                        <p>es el archivo final que la computadora puede ejecutar directamente. Es el resultado de
+                        <p>Es el archivo final que la computadora puede ejecutar directamente. Es el resultado de
                             compilar y vincular todo el código
                             fuente y el código objeto. Este tipo de archivo ya está en un formato que el sistema
                             operativo y la máquina pueden entender
@@ -154,6 +159,79 @@
                         <img src="codigoejecutable.jpg" alt="Imagen Código Ejecutable" width="200" height="250">
                     </div>
                 </article>
+                <article>
+
+                    <h3>Tipos de Traductores</h3>
+                    <h2>Traductores:</h2>
+                    <p>Para realizar esta traducción del código fuente al código objeto, se utilizan dos tipos de
+                        traductores:</p>
+
+                    <h3>1. Compiladores:</h3>
+                    <ul>
+                        <li>Traducen todo el código fuente de una vez.</li>
+                        <li>Analizan el código en busca de errores.</li>
+                        <li>Si no hay errores, generan un archivo de código objeto.</li>
+                        <li>Dependiendo del compilador, el código objeto puede ser ejecutable o requerir pasos
+                            adicionales (ensamblado, enlazado).</li>
+                        <li>Una vez que se obtiene el código ejecutable, se puede ejecutar sin necesidad de volver a
+                            compilar.</li>
+                    </ul>
+
+                    <h3>2. Intérpretes:</h3>
+                    <ul>
+                        <li>Traducen y ejecutan el código línea por línea.</li>
+                        <li>No generan un archivo de código objeto permanente.</li>
+                        <li>Cada fragmento de código fuente se traduce y ejecuta en el momento.</li>
+                    </ul>
+
+                    <h2>El caso de Java:</h2>
+                    <p>Java combina compilación e interpretación. Primero, el código fuente se compila a un formato
+                        intermedio llamado "bytecode". Luego, este bytecode es interpretado por la máquina virtual
+                        de Java (JVM).</p>
+
+                    <h2>Herramientas:</h2>
+                    <p>Para programar, se necesitan herramientas como editores de texto, compiladores o intérpretes,
+                        y enlazadores. Estas herramientas suelen estar integradas en entornos de desarrollo (IDEs),
+                        que facilitan la escritura, traducción y ejecución del código. Los IDEs también incluyen
+                        depuradores, herramientas de control de versiones y constructores de interfaces gráficas.
+                    </p>
+
+                </article>
+            </div>
+        </section>
+        <section id="proceso-obtencion-codigo">
+            <div class="informacion">
+                <h2>Proceso de Obtención de Código Ejecutable a partir de Código Fuente</h2>
+                <div class="proceso-contenedor">
+                    <img src="procesoobtencioncodigoejecutable.jpg" alt="Proceso de Obtención de Código ejecutable"
+                        width="250" height="250" class="imagen-derecha">
+                    <p>El proceso de obtención de código ejecutable a partir de código fuente es una secuencia de pasos
+                        crucial
+                        para transformar un programa escrito en un lenguaje de programación de alto nivel (como C, Java,
+                        Python) en
+                        un archivo ejecutable que la computadora pueda ejecutar directamente. Este proceso implica
+                        varias etapas y el
+                        uso de herramientas específicas que convierten el código legible por los humanos en un formato
+                        que el hardware
+                        de la computadora puede interpretar.</p>
+                    <p>Entre las herramientas implicadas en este proceso se encuentran:</p>
+                    <ul>
+                        <p><b>Escritura del Código Fuente:</b> El programador escribe el código utilizando
+                            un editor de texto o un IDE.</p>
+                        <p><b>Compilación:</b>El compilador convierte el código fuente en código objeto,
+                            verificando errores de sintaxis y transformando las instrucciones en un formato de bajo
+                            nivel.</p>
+                        <p><b>Enlazado (Linking):</b> El enlazador combina el código objeto con las bibliotecas
+                            necesarias para generar el archivo ejecutable final.</p>
+                        <p><b>Generación del Archivo Ejecutable:</b> El resultado es un archivo que la computadora
+                            puede ejecutar, como un archivo .exe o .out.</p>
+                        <p><b>Depuración y Optimización:</b> El uso de herramientas como depuradores (e.g., GDB)
+                            y optimizadores mejora la eficiencia y corrige posibles errores en el programa.</p>
+                    </ul>
+                    <p>El proceso de obtención de un código ejecutable implica desde la redacción del código hasta la
+                        generación de un archivo que la computadora puede ejecutar, utilizando herramientas como
+                        compiladores, intérpretes y enlazadores.</p>
+                </div>
             </div>
         </section>
 
@@ -161,11 +239,67 @@
             <div class="informacion">
                 <h2>Lenguajes de Programación</h2>
                 <div class="informacion">
-                    <p>Imagina que quieres decirle a una computadora qué hacer. No puedes simplemente hablarle en
-                        español o inglés, ¿verdad? Necesitas un lenguaje que la computadora entienda. ¡Ahí es donde
-                        entran los lenguajes de programación!</p>
-                    <p>Básicamente, un lenguaje de programación es como un conjunto de instrucciones especiales que le
-                        damos a una computadora para que realice tareas específicas.</p>
+                    <p>Los ordenadores solo entienden el lenguaje binario (ceros y unos), pero programar directamente en
+                        este lenguaje es muy difícil. Por eso, se crearon los <strong>lenguajes de
+                            programación</strong>, que permiten a los programadores escribir instrucciones en un
+                        lenguaje más cercano al humano.</p>
+
+                    <h2>Clasificación de los lenguajes de programación</h2>
+
+                    <p>Los lenguajes de programación se pueden clasificar según su cercanía al lenguaje máquina:</p>
+
+                    <ul>
+                        <li><strong>Lenguajes de bajo nivel (lenguaje máquina):</strong> Son los más cercanos al
+                            lenguaje binario y los más difíciles de usar para los humanos. Fueron los primeros en
+                            utilizarse, pero se abandonaron por su complejidad.</li>
+                        <li><strong>Lenguajes intermedios (lenguajes ensambladores):</strong> Utilizan códigos
+                            simbólicos en lugar de números binarios, lo que los hace más fáciles de entender. Cada
+                            instrucción en ensamblador se traduce a una instrucción en lenguaje máquina.</li>
+                        <li><strong>Lenguajes de alto nivel:</strong> Son los más utilizados actualmente. Permiten a los
+                            programadores escribir código de forma más sencilla y rápida, sin necesidad de conocer
+                            detalles del hardware. Ejemplos: Java, C++, Python.</li>
+                    </ul>
+
+                    <h2>Elementos básicos de un lenguaje de programación</h2>
+
+                    <ul>
+                        <li><strong>Identificadores:</strong> Nombres que se dan a los elementos del programa
+                            (variables, funciones, etc.).</li>
+                        <li><strong>Constantes:</strong> Datos que no cambian durante la ejecución del programa.</li>
+                        <li><strong>Operadores:</strong> Símbolos que realizan operaciones (suma, resta, etc.).</li>
+                        <li><strong>Instrucciones:</strong> Órdenes que se dan al ordenador.</li>
+                        <li><strong>Comentarios:</strong> Texto que explica el código.</li>
+                    </ul>
+
+                    <h2>Paradigmas de programación</h2>
+
+                    <p>Dentro de los lenguajes de alto nivel, existen dos paradigmas principales:</p>
+
+                    <ul>
+                        <li><strong>Lenguajes estructurados:</strong> Se basan en tres estructuras básicas (secuencial,
+                            alternativa y repetitiva). El programa se divide en módulos que se llaman entre sí.
+                            Ejemplos: Pascal, C, COBOL.</li>
+                        <li><strong>Lenguajes orientados a objetos:</strong> Se basan en la interacción entre objetos.
+                            Un objeto tiene datos (atributos) y acciones (métodos). Los objetos se comunican mediante
+                            mensajes. Ejemplos: Java, C++, C#.</li>
+                    </ul>
+
+                    <h2>Ventajas de los lenguajes de alto nivel</h2>
+
+                    <ul>
+                        <li>Más fáciles de aprender y usar.</li>
+                        <li>Permiten crear programas más complejos.</li>
+                        <li>Mayor productividad.</li>
+                    </ul>
+
+                    <h2>Desventajas de los lenguajes de alto nivel</h2>
+
+                    <ul>
+                        <li>Necesitan ser traducidos a lenguaje máquina.</li>
+                        <li>Mayor consumo de recursos.</li>
+                        <li>Menor eficiencia que los lenguajes de bajo nivel.</li>
+                    </ul>
+
                     <div class="contenido-lenguajes">
                         <img src="lenguajesprogramacion.jpg" alt="Lenguajes de programación" width="250" height="250">
                         <div class="texto-lenguaje">
@@ -199,40 +333,7 @@
                 </div>
         </section>
 
-        <section id="proceso-obtencion-codigo">
-            <div class="informacion">
-                <h2>Proceso de Obtención de Código Ejecutable a partir de Código Fuente</h2>
-                <div class="proceso-contenedor">
-                    <img src="procesoobtencioncodigoejecutable.jpg" alt="Proceso de Obtención de Código ejecutable" width="250" height="250" class="imagen-derecha">
-                    <p>El proceso de obtención de código ejecutable a partir de código fuente es una secuencia de pasos
-                        crucial
-                        para transformar un programa escrito en un lenguaje de programación de alto nivel (como C, Java,
-                        Python) en
-                        un archivo ejecutable que la computadora pueda ejecutar directamente. Este proceso implica
-                        varias etapas y el
-                        uso de herramientas específicas que convierten el código legible por los humanos en un formato
-                        que el hardware
-                        de la computadora puede interpretar.</p>
-                    <p>Entre las herramientas implicadas en este proceso se encuentran:</p>
-                    <ul>
-                        <p><b>Escritura del Código Fuente:</b> El programador escribe el código utilizando
-                            un editor de texto o un IDE.</p>
-                        <p><b>Compilación:</b>El compilador convierte el código fuente en código objeto,
-                            verificando errores de sintaxis y transformando las instrucciones en un formato de bajo
-                            nivel.</p>
-                        <p><b>Enlazado (Linking):</b> El enlazador combina el código objeto con las bibliotecas
-                            necesarias para generar el archivo ejecutable final.</p>
-                        <p><b>Generación del Archivo Ejecutable:</b> El resultado es un archivo que la computadora
-                            puede ejecutar, como un archivo .exe o .out.</p>
-                        <p><b>Depuración y Optimización:</b> El uso de herramientas como depuradores (e.g., GDB)
-                            y optimizadores mejora la eficiencia y corrige posibles errores en el programa.</p>
-                    </ul>
-                    <p>El proceso de obtención de un código ejecutable implica desde la redacción del código hasta la
-                        generación de un archivo que la computadora puede ejecutar, utilizando herramientas como
-                        compiladores, intérpretes y enlazadores.</p>
-                </div>
-            </div>
-        </section>
+
 
         <section id="maquinas-virtuales">
             <div class="informacion">
@@ -283,7 +384,8 @@
                         fácilmente a las nuevas necesidades.</li>
                     <li><b>Fomenta la reutilización:</b> cree componentes de software que puedan usarse en múltiples
                         proyectos.</li>
-                    <img src="objetivosbasicossoftware.jpg" alt="Obejtivos básicos de software" width="250" height="250">
+                    <img src="objetivosbasicossoftware.jpg" alt="Obejtivos básicos de software" width="250"
+                        height="250">
                 </ol>
                 <h3>Relevancia en el Contexto Actual</h3>
                 <p>En un tiempo en el que el software se encuentra en todas partes, desde aplicaciones móviles hasta
@@ -298,149 +400,205 @@
         </section>
 
         <section id="desarrollo-aplicaciones">
-            <div class="informacion">
+            <section class="informacion">
                 <h2>Fases del desarrollo de una aplicación informática</h2>
-                <p>son las distintas etapas del proceso mediante las cuales se planifica, diseña, desarrolla, prueba,
+                <p>Son las distintas etapas del proceso mediante las cuales se planifica, diseña, desarrolla, prueba,
                     implementa y
                     mantiene un software. Estas fases aseguran que el desarrollo se realice de manera estructurada y
                     controlada, permitiendo
                     la entrega de un producto de calidad que cumpla con las expectativas y necesidades del cliente.</p>
                 <img src="fasesdeldesarrolloinformatica.jpg" alt="Fases de Dearrollo" width="250" height="250">
 
-                <div class="columnas">
-                    <article class="columna">
-                        <h3>Análisis de Requisitos</h3>
-                        <p>Esta fase inicial es crucial para el éxito del proyecto. Su cometido es:</p>
-                        <ul>
-                            <li>Identificar las necesidades del cliente y usuarios</li>
-                            <li>Definir los objetivos y alcance del proyecto</li>
-                            <li>Recopilar y documentar los requisitos funcionales y no funcionales</li>
-                            <li>Establecer las restricciones y limitaciones del sistema</li>
-                            <img src="AnálisisRequisitos.jpg" alt="Análisis de Requisitos" width="250" height="250">
-                        </ul>
-                    </article>
-
-                    <article class="columna">
-                        <h3>Diseño</h3>
-                        <img src="diseñoinformatica.jpg" alt="Diseño" width="250" height="250">
-                        <p>Una vez definidos los requisitos, se procede al diseño. Esta fase tiene como cometido:</p>
-                        <ul>
-                            <li>Crear la arquitectura del sistema</li>
-                            <li>Diseñar la estructura de datos</li>
-                            <li>Definir las interfaces de usuario</li>
-                            <li>Establecer los componentes del software y sus relaciones</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="modelos-ciclo-vida">
-            <div class="informacion">
-                <h2>Modelos de ciclo de vida del software</h2>
-        <img src="modelociclosoftware.jpg" alt="Modelos de Ciclos de Software" width="250" height="250">
-        
-        <!-- Modelo en Cascada -->
-        <article>
-            <h3>Modelo en Cascada</h3>
-            <p>Este es el modelo más antiguo y tradicional.</p>
-            <ul>
-                <li><b>Características:</b> Secuencial y lineal</li>
-                <li><b>Fases:</b> Requisitos, Diseño, Implementación, Verificación, Mantenimiento</li>
-                <li><b>Ventaja:</b> Simple y fácil de entender</li>
-                <li><b>Desventaja:</b> Poca flexibilidad para cambios</li>
-            </ul>
-        </article>
-
-        <!-- Modelo Incremental -->
-        <article>
-            <h3>Modelo Incremental</h3>
-            <p>Este modelo desarrolla el software en pequeños incrementos funcionales.</p>
-            <ul>
-                <li><b>Características:</b> Entregas parciales y funcionales en cada incremento</li>
-                <li><b>Fases:</b> Requisitos iniciales, Desarrollo y entrega, Evaluación y retroalimentación</li>
-                <li><b>Ventaja:</b> Mayor flexibilidad y entregas rápidas</li>
-                <li><b>Desventaja:</b> Planificación compleja y propagación de errores si no se detectan a tiempo</li>
-            </ul>
-        </article>
-
-        <!-- Modelo en Espiral -->
-        <article>
-            <h3>Modelo en Espiral</h3>
-            <p>Se enfoca en un desarrollo iterativo y la gestión de riesgos a través de ciclos repetitivos.</p>
-            <ul>
-                <li><b>Características:</b> Iterativo, con enfoque en la gestión de riesgos</li>
-                <li><b>Fases:</b> Identificación de objetivos, Análisis de riesgos, Desarrollo y verificación, Planificación del próximo ciclo</li>
-                <li><b>Ventaja:</b> Ideal para proyectos grandes y complejos</li>
-                <li><b>Desventaja:</b> Costoso y requiere experiencia en gestión de riesgos</li>
-            </ul>
-        </article>
-    </div>
-</section>
-
-        <section id="metodologias-actuales">
-            <div class="informacion">
-                <h2>Metodologías de desarrollo de software actuales</h2>
-                <p>El desarrollo de software moderno se basa en diversas metodologías que buscan optimizar el
-                    proceso y la calidad del producto. Algunas de las más relevantes son:</p>
-
-
-
-                <div class="metodologias-container">
-                    <div class="metodologias-agiles">
-                        <h3>1. Metodologías Ágiles</h3>
-                        <p>Se caracterizan por su flexibilidad y enfoque en la entrega continua de valor. </p>
-                        <img src="metodologiaagile.jpg" alt="Metodologías Agiles"  width="370" height="250">
-                        <ul>
-                            <li><b>Scrum:</b> Desarrollo iterativo en sprints cortos, con roles clave como Product
-                                Owner,
-                                Scrum Master y Equipo de Desarrollo. </li>
-                            <li><b>Kanban:</b> Visualización del flujo de trabajo, límite en el trabajo en progreso para
-                                optimizar el flujo.</li>
-                            <li><b>Extreme Programming (XP):</b> Prioriza prácticas de ingeniería como la programación
-                                en
-                                parejas y el desarrollo guiado por pruebas.</li>
-                        </ul>
-                    </div>
-
-                    <div class="devops">
-                        <h3>2. DevOps</h3>
-                        <p> Es una combinación de los términos ingleses development (desarrollo) y operations
-                            (operaciones),
-                            designa la unión de personas, procesos y tecnología para ofrecer valor a los clientes de
-                            forma constante.
+                <p>El desarrollo de una aplicación informática implica una serie de fases para asegurar que el software
+                    resultante sea de calidad y cumpla con las necesidades del cliente. Estas fases son:</p>
+                <ol>
+                    <li>
+                        <h3>Análisis:</h3>
+                        <p>El objetivo de esta tarea es analizar las necesidades de los usuarios potenciales del
+                            software para determinar qué debe hacer la aplicación y, de acuerdo
+                            con ello, escribir una especificación precisa de dicho sistema. Durante esta fase
+                            se pretende responder a las siguientes preguntas: qué información ha de ser procesada, qué
+                            función y rendimiento se desean, qué interfaces deben establecerse,
+                            qué restricciones de diseño existen y qué criterios de validación se necesitan para
+                            definir un sistema correcto. Para ello, como es obvio, es necesario realizar una actividad
+                            inicial de comunicación con el cliente que ha encargado el desarrollo de la
+                            aplicación, y una vez obtenida la información necesaria, se podrá modelar el sistema. Como
+                            resultado, se obtendrá una especificación del sistema, que consistirá en
+                            una documentación que describe lo que tiene que hacer el software, pero no cómo.
+                            Es primordial que esta documentación sea comprensible, completa y fácil de verificar y de
+                            modificar para facilitar todo el trabajo posterior.</p>
+                    </li>
+                    <li>
+                        <h3>Diseño:</h3>
+                        <p>Si bien el objetivo de la fase de análisis es determinar qué debe hacer el
+                            sistema, una vez se sabe esto, es preciso establecer cómo se va a resolver el problema
+                            planteado. Durante esta fase, se traducen los requisitos resultado de la fase
+                            de análisis en componentes de software (tablas de una base de datos, programas
+                            con procedimientos o funciones, clases con atributos y métodos, interfaz de usuario, etc.).
+                            Se trata de un refinamiento de la fase anterior. Por ejemplo, en esta fase,
+                            una de las decisiones que habrá que tomar es decidir qué sistema gestor de base
+                            de datos (SGBD) se va a emplear para gestionar la información que debe ser usada
+                            o generada por la aplicación: Oracle, MySQL, SQL Server, etcétera. </p>
+                    </li>
+                    <li>
+                        <h3>Programación:</h3>
+                        <p>Consiste en traducir los resultados de la fase de diseño en una forma legible para la
+                            máquina, es decir, se escribe el código fuente de cada componente del software empleando un
+                            determinado lenguaje de programación. El
+                            resultado de esta etapa es el código ejecutable. </p>
+                    </li>
+                    <li>
+                        <h3>Pruebas:</h3>
+                        <p>con estas se comprueba si la aplicación funciona correctamente. Hay diferentes tipos de
+                            pruebas. Así, se comienza probando cada componente de software
+                            por separado (pruebas unitarias) y, posteriormente, se van integrando poco a poco los
+                            componentes (pruebas de integración), hasta probar el programa completo (pruebas de
+                            validación), cuyo objetivo es comprobar que la aplicación satisface los requisitos
+                            del cliente. Como resultado de estas pruebas, se descubrirán errores, en atención a
+                            los cuales, será necesario modificar el código, o incluso rehacer las tareas previas de
+                            diseño y/o análisis.
                         </p>
-                        <img src="DevOps.jpg" alt="Dev Ops" width="500" height="900">
-                    </div>
+                    </li>
+                    <li>
+                        <h3>Explotación:</h3>
+                        <p>En esta etapa, se lleva a cabo la instalación y puesta en marcha del
+                            software en el entorno de trabajo del cliente. </p>
+                    </li>
+                    <li>
+                        <h3>Mantenimiento:</h3>
+                        <p>El software sufrirá cambios después de que se entregue al cliente
+                            por diversos motivos. La tarea de mantenimiento consiste en realizar cambios sobre el
+                            software, para lo que se aplicará al programa existente, cada una de las actividades
+                            precedentes del ciclo de vida en vez de a uno nuevo.
+                        </p>
+                    </li>
+                </ol>
+            </section>
+            <section id="modelos-ciclo-vida">
+                <div class="informacion">
+                    <h2>Modelos de ciclo de vida del software</h2>
+                    <img src="modelociclosoftware.jpg" alt="Modelos de Ciclos de Software" width="250" height="250">
 
-                    <div class="lean-software">
-                        <h3>3. Lean Software Development</h3>
-                        <p> es una metodología que busca hacer el desarrollo de software más eficiente. Se enfoca en
-                            eliminar lo que no
-                            aporta valor, como tareas innecesarias, y en entregar el producto lo más rápido posible.
-                            Promueve la mejora continua,
-                            el trabajo en equipo y la toma de decisiones basadas en datos. La idea es crear software de
-                            calidad de
-                            forma ágil, maximizando el valor para el cliente.</p>
-                        <img src="LeanSoftwareDevelopment.jpg" alt="Lean Software" width="370" height="250">
-                    </div>
+                    <!-- Modelo en Cascada -->
+                    <article>
+                        <h3>Modelo en Cascada</h3>
+                        <p>Este es el modelo más antiguo y tradicional.</p>
+                        <ul>
+                            <li><b>Características:</b> Secuencial y lineal</li>
+                            <li><b>Fases:</b> Requisitos, Diseño, Implementación, Verificación, Mantenimiento</li>
+                            <li><b>Ventaja:</b> Simple y fácil de entender</li>
+                            <li><b>Desventaja:</b> Poca flexibilidad para cambios</li>
+                            <img src="cascada.png" alt="Modelo en Cascada" width="400" height="200">
+                        </ul>
+                    </article>
 
-                    <div class="desing-thinking">
-                        <h3>4. Design Thinking</h3>
-                        <p> Es un enfoque para resolver problemas de forma creativa y centrada en el usuario. Consiste
-                            en entender bien las necesidades
-                            de las personas, definir el problema, generar ideas, crear prototipos y probar soluciones.
-                            Es un proceso flexible que fomenta la
-                            colaboración en equipo y se enfoca en mejorar la experiencia del usuario a través de la
-                            innovación. En resumen, busca encontrar soluciones efectivas y útiles
-                            para los usuarios, adaptándose a lo largo del proceso.</p>
-                        <img src="Design Thinking.jpg" alt="Design Thinking" width="370" height="250">
-                    </div>
+                    <!-- Modelo Incremental -->
+                    <article>
+                        <h3>Modelo Incremental</h3>
+                        <p>Este modelo desarrolla el software en pequeños incrementos funcionales.</p>
+                        <ul>
+                            <li><b>Características:</b> Entregas parciales y funcionales en cada incremento</li>
+                            <li><b>Fases:</b> Requisitos iniciales, Desarrollo y entrega, Evaluación y
+                                retroalimentación
+                            </li>
+                            <li><b>Ventaja:</b> Mayor flexibilidad y entregas rápidas</li>
+                            <li><b>Desventaja:</b> Planificación compleja y propagación de errores si no se detectan a tiempo</li>
+                            <img src="incremental.png" alt="Modelo Incremental" width="400" height="200">
+                        </ul>
+                    </article>
+
+                    <!-- Modelo en Espiral -->
+                    <article>
+                        <h3>Modelo en Espiral</h3>
+                        <p>Se enfoca en un desarrollo iterativo y la gestión de riesgos a través de ciclos
+                            repetitivos.</p>
+                        <ul>
+                            <li><b>Características:</b> Iterativo, con enfoque en la gestión de riesgos</li>
+                            <li><b>Fases:</b> Identificación de objetivos, Análisis de riesgos, Desarrollo y
+                                verificación,
+                                Planificación del próximo ciclo</li>
+                            <li><b>Ventaja:</b> Ideal para proyectos grandes y complejos</li>
+                            <li><b>Desventaja:</b> Costoso y requiere experiencia en gestión de riesgos</li>
+                            <img src="espiral.jpeg" alt="Modelo en Espiral" width="400" height="200">
+                        </ul>
+                    </article>
                 </div>
-                <p>La elección de la metodología adecuada dependerá del proyecto, las necesidades del cliente y el
-                    equipo de desarrollo.</p>
-            </div>
-        </section>
+            </section>
+
+            <section id="metodologias-actuales">
+                <div class="informacion">
+                    <h2>Metodologías de desarrollo de software actuales</h2>
+                    <p>El desarrollo de software moderno se basa en diversas metodologías que buscan optimizar el
+                        proceso y la calidad del producto. Algunas de las más relevantes son:</p>
+
+
+
+                    <div class="metodologias-container">
+                        <div class="metodologias-agiles">
+                            <h3>1. Metodologías Ágiles</h3>
+                            <p>Se caracterizan por su flexibilidad y enfoque en la entrega continua de valor. </p>
+                            <img src="metodologiaagile.jpg" alt="Metodologías Agiles" width="370" height="250">
+                            <ul>
+                                <li><b>Scrum:</b> Desarrollo iterativo en sprints cortos, con roles clave como
+                                    Product
+                                    Owner,
+                                    Scrum Master y Equipo de Desarrollo. </li>
+                                <li><b>Kanban:</b> Visualización del flujo de trabajo, límite en el trabajo en
+                                    progreso para
+                                    optimizar el flujo.</li>
+                                <li><b>Extreme Programming (XP):</b> Prioriza prácticas de ingeniería como la
+                                    programación
+                                    en
+                                    parejas y el desarrollo guiado por pruebas.</li>
+                            </ul>
+                        </div>
+
+                        <div class="devops">
+                            <h3>2. DevOps</h3>
+                            <p> Es una combinación de los términos ingleses development (desarrollo) y operations
+                                (operaciones),
+                                designa la unión de personas, procesos y tecnología para ofrecer valor a los
+                                clientes de
+                                forma constante.
+                            </p>
+                            <img src="DevOps.jpg" alt="Dev Ops" width="500" height="900">
+                        </div>
+
+                        <div class="lean-software">
+                            <h3>3. Lean Software Development</h3>
+                            <p> es una metodología que busca hacer el desarrollo de software más eficiente. Se
+                                enfoca en
+                                eliminar lo que no
+                                aporta valor, como tareas innecesarias, y en entregar el producto lo más rápido
+                                posible.
+                                Promueve la mejora continua,
+                                el trabajo en equipo y la toma de decisiones basadas en datos. La idea es crear
+                                software de
+                                calidad de
+                                forma ágil, maximizando el valor para el cliente.</p>
+                            <img src="LeanSoftwareDevelopment.jpg" alt="Lean Software" width="370" height="250">
+                        </div>
+
+                        <div class="desing-thinking">
+                            <h3>4. Design Thinking</h3>
+                            <p> Es un enfoque para resolver problemas de forma creativa y centrada en el usuario.
+                                Consiste
+                                en entender bien las necesidades
+                                de las personas, definir el problema, generar ideas, crear prototipos y probar
+                                soluciones.
+                                Es un proceso flexible que fomenta la
+                                colaboración en equipo y se enfoca en mejorar la experiencia del usuario a través de
+                                la
+                                innovación. En resumen, busca encontrar soluciones efectivas y útiles
+                                para los usuarios, adaptándose a lo largo del proceso.</p>
+                            <img src="Design Thinking.jpg" alt="Design Thinking" width="370" height="250">
+                        </div>
+                    </div>
+                    <p>La elección de la metodología adecuada dependerá del proyecto, las necesidades del cliente y
+                        el
+                        equipo de desarrollo.</p>
+                </div>
+            </section>
     </div>
 
     <!--Botón para subir al encabezado de la página-->
@@ -448,4 +606,5 @@
     <script src="./Desarrollo.js"></script>
 
 </body>
+
 </html>
